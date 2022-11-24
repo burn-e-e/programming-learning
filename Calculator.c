@@ -59,7 +59,6 @@ int urjih(int too5, int too6)
 {
      int answer;
      answer = too5 * too6;
-
      return answer;
 }
 int huvaah(int too7, int too8)
