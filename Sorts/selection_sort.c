@@ -13,7 +13,9 @@ int main()
           for (j = i + 1; j < n; j++)
           {
                if (a[position] > a[j])
+               {
                     position = j;
+               }
           }
           if (position != i)
           {
