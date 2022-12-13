@@ -1,0 +1,1 @@
+cd "c:\Users\4burn\Documents\GitHub\c_note\Lab_14" &
