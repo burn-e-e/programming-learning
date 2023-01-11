@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="4burn"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-14 10:25:32 AM"/>
+        <attribute name="created" value="NGJ1cm47REVTS1RPUC1SSjY3SDk1OzIwMjItMTItMDc7MTA6NDA6MzAgQU07Mjc3NA=="/>
+        <attribute name="edited" value="NGJ1cm47REVTS1RPUC1SSjY3SDk1OzIwMjItMTItMTQ7MTA6MjU6MzIgQU07MzsyODg3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <turn expression="130" rotate="right"/>
+            <forward expression="50" pen="down"/>
+            <home/>
+            <turn expression="130" rotate="left"/>
+            <forward expression="50" pen="down"/>
+            <turn expression="100" rotate="left"/>
+            <forward expression="50" pen="down"/>
+            <turn expression="80" rotate="left"/>
+            <forward expression="50" pen="down"/>
+            <turn expression="130" rotate="right"/>
+            <forward expression="50" pen="down"/>
+            <turn expression="50" rotate="right"/>
+            <forward expression="50" pen="down"/>
+            <turn expression="130" rotate="right"/>
+            <forward expression="50" pen="down"/>
+            <turn expression="50" rotate="left"/>
+            <forward expression="50" pen="up"/>
+            <turn expression="130" rotate="left"/>
+            <forward expression="50" pen="down"/>
+            <turn expression="50" rotate="left"/>
+            <forward expression="50" pen="down"/>
+            <turn expression="80" rotate="left"/>
+            <forward expression="16.666666" pen="down"/>
+            <turn expression="50" rotate="left"/>
+            <forward expression="50" pen="down"/>
+            <turn expression="50" rotate="right"/>
+            <forward expression="16.666666" pen="down"/>
+            <turn expression="130" rotate="right"/>
+            <forward expression="50" pen="down"/>
+            <home/>
+            <turn expression="130" rotate="right"/>
+            <forward expression="16.666666" pen="down"/>
+            <turn expression="100" rotate="right"/>
+            <forward expression="50" pen="down"/>
+            <turn expression="100" rotate="left"/>
+            <forward expression="16.666666" pen="down"/>
+            <turn expression="80" rotate="left"/>
+            <forward expression="50" pen="down"/>
+            <turn expression="180" rotate="right"/>
+            <forward expression="50" pen="down"/>
+            <turn expression="50" rotate="left"/>
+            <forward expression="50" pen="down"/>
+            <turn expression="130" rotate="right"/>
+            <forward expression="16.666666" pen="down"/>
+            <turn expression="50" rotate="right"/>
+            <forward expression="50" pen="down"/>
+            <home/>
+            <turn expression="130" rotate="left"/>
+            <forward expression="16.666666" pen="down"/>
+            <turn expression="100" rotate="left"/>
+            <forward expression="50" pen="down"/>
+            <turn expression="100" rotate="right"/>
+            <forward expression="16.666666" pen="down"/>
+            <turn expression="80" rotate="right"/>
+            <forward expression="50" pen="down"/>
+            <turn expression="80" rotate="left"/>
+            <forward expression="16.666666" pen="down"/>
+            <turn expression="50" rotate="left"/>
+            <forward expression="16.666666" pen="down"/>
+            <turn expression="50" rotate="left"/>
+            <forward expression="50" pen="down"/>
+            <turn expression="80" rotate="left"/>
+            <forward expression="50" pen="down"/>
+            <turn expression="130" rotate="right"/>
+            <forward expression="16.666666" pen="down"/>
+            <turn expression="50" rotate="right"/>
+            <forward expression="50" pen="down"/>
+            <turn expression="80" rotate="right"/>
+            <forward expression="50" pen="down"/>
+        </body>
+    </function>
+</flowgorithm>

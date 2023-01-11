@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="4burn"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-30 10:12:23 AM"/>
+        <attribute name="created" value="NGJ1cm47REVTS1RPUC1SSjY3SDk1OzIwMjItMTEtMzA7MDk6NTc6MzEgQU07Mjc4Ng=="/>
+        <attribute name="edited" value="NGJ1cm47REVTS1RPUC1SSjY3SDk1OzIwMjItMTEtMzA7MTA6MTI6MjMgQU07MTsyODc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, sum, j" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <for variable="j" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="a[j]" expression="random(100)"/>
+                <output expression="a[j]" newline="True"/>
+                <declare name="div, i" type="Integer" array="False" size=""/>
+                <for variable="i" start="1" end="a[j]" direction="inc" step="1">
+                    <assign variable="div" expression="a[j]%i"/>
+                    <if expression="div==0">
+                        <then>
+                            <assign variable="sum" expression="sum+i"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="sum==a[j]">
+                    <then>
+                        <output expression="a[j]&amp;&quot; is perfect number&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="a[j]&amp;&quot; is not perfect number&quot;" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

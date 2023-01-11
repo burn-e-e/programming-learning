@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="4burn"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-29 08:40:40 PM"/>
+        <attribute name="created" value="NGJ1cm47REVTS1RPUC1SSjY3SDk1OzIwMjItMTEtMjk7MDg6MTY6NDEgUE07MjgwNA=="/>
+        <attribute name="edited" value="NGJ1cm47REVTS1RPUC1SSjY3SDk1OzIwMjItMTEtMjk7MDg6NDA6NDAgUE07MTsyOTA4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, odd, even" type="Integer" array="False" size=""/>
+            <assign variable="even" expression="0"/>
+            <assign variable="odd" expression="0"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="a[i]" expression="random(100)"/>
+                <output expression="i+1&amp;&quot;. &quot;&amp;a[i]" newline="True"/>
+                <if expression="a[i]%2==0">
+                    <then>
+                        <output expression="&quot;Even =&quot;&amp;a[i]" newline="True"/>
+                        <assign variable="even" expression="even+a[i]"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Odd =&quot;&amp;a[i]" newline="True"/>
+                        <assign variable="odd" expression="odd+a[i]"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="odd" newline="True"/>
+            <output expression="even" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

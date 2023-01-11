@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="4burn"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-04 07:10:51 PM"/>
+        <attribute name="created" value="NGJ1cm47REVTS1RPUC1SSjY3SDk1OzIwMjItMTItMDQ7MDY6NTY6MzUgUE07MjgwMw=="/>
+        <attribute name="edited" value="NGJ1cm47REVTS1RPUC1SSjY3SDk1OzIwMjItMTItMDQ7MDc6MTA6NTEgUE07MzsyOTAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, k, x, y, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Hurvuuleh toonuudiin toog oruulna uu &quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="a[i]" expression="random(300)"/>
+                <assign variable="k" expression="0"/>
+                <assign variable="y" expression="a[i]"/>
+                <while expression="a[i]&gt;0">
+                    <assign variable="x" expression="a[i]%10"/>
+                    <assign variable="k" expression="k*10+x"/>
+                    <assign variable="a[i]" expression="a[i]/10"/>
+                </while>
+                <if expression="y==k">
+                    <then>
+                        <output expression="&quot;Palindrome number -&gt; &quot;&amp;k" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Not Palindrome number -&gt; &quot;&amp;k" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

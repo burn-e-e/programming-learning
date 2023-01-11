@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="4burn"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-19 10:56:02 AM"/>
+        <attribute name="created" value="NGJ1cm47REVTS1RPUC1SSjY3SDk1OzIwMjItMTItMTk7MTA6MzI6MjQgQU07Mjc4MQ=="/>
+        <attribute name="edited" value="NGJ1cm47REVTS1RPUC1SSjY3SDk1OzIwMjItMTItMTk7MTA6NDU6MzcgQU07Mjs0YnVybjtERVNLVE9QLVJKNjdIOTU7MjAyMi0xMi0xOTswOTo0MDowOCBBTTs1NzQ3"/>
+        <attribute name="edited" value="NGJ1cm47REVTS1RPUC1SSjY3SDk1OzIwMjItMTItMTk7MTA6NTY6MDIgQU07MzsyODkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, haih" type="Integer" array="False" size=""/>
+            <output expression="&quot;N &#1090;&#1086;&#1086;&#1075; &#1086;&#1088;&#1091;&#1091;&#1083;: &quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <output expression="&quot;Random Numbers: &quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="a[i]" expression="random(9)+1"/>
+                <output expression="a[i]&amp;&quot; &quot;" newline="False"/>
+            </for>
+            <output expression="&quot; &quot;" newline="True"/>
+            <call expression="ih(a,n)"/>
+            <call expression="baga(a,n)"/>
+            <input variable="haih"/>
+            <call expression="haih(a,n,haih)"/>
+        </body>
+    </function>
+    <function name="baga" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Integer" array="True"/>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i, counter" type="Integer" array="False" size=""/>
+            <assign variable="counter" expression="1"/>
+            <while expression="counter&lt;n">
+                <for variable="i" start="0" end="(n-1)-counter" direction="inc" step="1">
+                    <if expression="a[i]&gt;a[i+1]">
+                        <then>
+                            <declare name="temp" type="Integer" array="False" size=""/>
+                            <assign variable="temp" expression="a[i]"/>
+                            <assign variable="a[i]" expression="a[i+1]"/>
+                            <assign variable="a[i+1]" expression="temp"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <assign variable="counter" expression="counter+1"/>
+            </while>
+            <output expression="&quot;Bagaas ihruu: &quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="a[i]&amp;&quot; &quot;" newline="False"/>
+            </for>
+            <output expression="&quot; &quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="haih" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Integer" array="True"/>
+            <parameter name="n" type="Integer" array="False"/>
+            <parameter name="haih" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c, i" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="0"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <if expression="haih==a[i]">
+                    <then>
+                        <assign variable="c" expression="c+1"/>
+                        <if expression="c&gt;0">
+                            <then>
+                                <output expression="i+1&amp;&quot; deh index deer &quot;&amp;a[i] &amp;&quot; baina&quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="c==0">
+                <then>
+                    <output expression="&quot;Tanii haij baigaa too ALGO&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+    <function name="ih" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Integer" array="True"/>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i, counter" type="Integer" array="False" size=""/>
+            <assign variable="counter" expression="1"/>
+            <while expression="counter&lt;n">
+                <for variable="i" start="0" end="(n-1)-counter" direction="inc" step="1">
+                    <if expression="a[i]&lt;a[i+1]">
+                        <then>
+                            <declare name="temp" type="Integer" array="False" size=""/>
+                            <assign variable="temp" expression="a[i]"/>
+                            <assign variable="a[i]" expression="a[i+1]"/>
+                            <assign variable="a[i+1]" expression="temp"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <assign variable="counter" expression="counter+1"/>
+            </while>
+            <output expression="&quot;Ihees bagaru: &quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="a[i]&amp;&quot; &quot;" newline="False"/>
+            </for>
+            <output expression="&quot; &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

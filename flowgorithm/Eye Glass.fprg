@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="4burn"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-10 11:31:04 AM"/>
+        <attribute name="created" value="NGJ1cm47REVTS1RPUC1SSjY3SDk1OzIwMjItMTItMTA7MTA6MjA6NDEgQU07Mjc2OA=="/>
+        <attribute name="edited" value="NGJ1cm47REVTS1RPUC1SSjY3SDk1OzIwMjItMTItMTA7MTE6MzE6MDQgQU07MjsyODc5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="20"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <forward expression="100" pen="down"/>
+                <turn expression="360/n" rotate="right"/>
+            </for>
+            <home/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="200" pen="down"/>
+            <turn expression="90" rotate="right"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <forward expression="100" pen="down"/>
+                <turn expression="360/n" rotate="left"/>
+            </for>
+            <forward expression="100" pen="up"/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="200" pen="down"/>
+            <forward expression="30" pen="up"/>
+            <turn expression="90" rotate="right"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <forward expression="90" pen="down"/>
+                <turn expression="360/n" rotate="left"/>
+            </for>
+            <turn expression="90" rotate="right"/>
+            <forward expression="260" pen="up"/>
+            <turn expression="90" rotate="left"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <forward expression="90" pen="down"/>
+                <turn expression="360/n" rotate="right"/>
+            </for>
+            <turn expression="90" rotate="right"/>
+            <forward expression="620" pen="up"/>
+            <turn expression="180" rotate="right"/>
+            <forward expression="20" pen="down"/>
+            <turn expression="180" rotate="right"/>
+            <forward expression="20" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="100" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="20" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="100" pen="up"/>
+            <turn expression="45" rotate="right"/>
+            <forward expression="70" pen="up"/>
+            <forward expression="245" pen="down"/>
+            <forward expression="60" pen="up"/>
+            <forward expression="400" pen="down"/>
+            <turn expression="180" rotate="right"/>
+            <forward expression="780" pen="up"/>
+            <turn expression="45" rotate="left"/>
+            <forward expression="90" pen="up"/>
+            <turn expression="135" rotate="left"/>
+            <forward expression="50" pen="up"/>
+            <forward expression="420" pen="down"/>
+            <forward expression="40" pen="up"/>
+            <forward expression="340" pen="down"/>
+            <for variable="i" start="0" end="35" direction="inc" step="4">
+                <turn expression="i" rotate="right"/>
+                <forward expression="i" pen="down"/>
+            </for>
+            <home/>
+            <forward expression="649" pen="up"/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="283" pen="up"/>
+            <turn expression="90" rotate="right"/>
+            <for variable="i" start="1" end="5" direction="inc" step="1">
+                <turn expression="40" rotate="right"/>
+                <forward expression="70" pen="down"/>
+            </for>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <forward expression="3" pen="down"/>
+                <turn expression="170/n" rotate="right"/>
+            </for>
+            <home/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="634" pen="up"/>
+            <forward expression="20" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="100" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="20" pen="down"/>
+            <turn expression="180" rotate="right"/>
+            <forward expression="20" pen="up"/>
+            <turn expression="45" rotate="left"/>
+            <forward expression="780" pen="down"/>
+            <home/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="650" pen="up"/>
+            <turn expression="45" rotate="left"/>
+            <forward expression="780" pen="down"/>
+            <for variable="i" start="0" end="35" direction="inc" step="4">
+                <turn expression="i" rotate="right"/>
+                <forward expression="i" pen="down"/>
+            </for>
+            <home/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="634" pen="up"/>
+            <forward expression="20" pen="up"/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="100" pen="up"/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="20" pen="up"/>
+            <turn expression="180" rotate="right"/>
+            <forward expression="20" pen="up"/>
+            <turn expression="45" rotate="left"/>
+            <forward expression="780" pen="up"/>
+            <for variable="i" start="1" end="4" direction="inc" step="1">
+                <turn expression="40" rotate="right"/>
+                <forward expression="70" pen="down"/>
+            </for>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <forward expression="3" pen="down"/>
+                <turn expression="170/n" rotate="right"/>
+            </for>
+            <home/>
+        </body>
+    </function>
+</flowgorithm>

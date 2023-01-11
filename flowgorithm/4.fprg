@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="4burn"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-30 09:57:22 AM"/>
+        <attribute name="created" value="NGJ1cm47REVTS1RPUC1SSjY3SDk1OzIwMjItMTEtMjk7MDk6MTY6MTMgUE07MjgwNA=="/>
+        <attribute name="edited" value="NGJ1cm47REVTS1RPUC1SSjY3SDk1OzIwMjItMTEtMzA7MDk6NTc6MjIgQU07MjsyODk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, s, j" type="Integer" array="False" size=""/>
+            <assign variable="j" expression="2"/>
+            <assign variable="s" expression="0"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="a[i]" expression="(random(100))+1"/>
+                <output expression="a[i]" newline="True"/>
+                <while expression="j &lt; a[i]">
+                    <if expression="a[i]%2==0">
+                        <then>
+                            <assign variable="s" expression="s+1"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="j" expression="j+1"/>
+                </while>
+                <if expression="s==0">
+                    <then>
+                        <output expression="&quot;its prime&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;not prime number&quot;" newline="True"/>
+                    </else>
+                </if>
+                <assign variable="s" expression="0"/>
+                <assign variable="j" expression="2"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

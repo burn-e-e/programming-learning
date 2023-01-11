@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="4burn"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-29 09:14:21 PM"/>
+        <attribute name="created" value="NGJ1cm47REVTS1RPUC1SSjY3SDk1OzIwMjItMTEtMjk7MDg6NDA6NTMgUE07MjgwNA=="/>
+        <attribute name="edited" value="NGJ1cm47REVTS1RPUC1SSjY3SDk1OzIwMjItMTEtMjk7MDk6MTQ6MjEgUE07MTsyOTA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, multiply" type="Integer" array="False" size=""/>
+            <assign variable="multiply" expression="1"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="a[i]" expression="random(10)"/>
+                <output expression="i+1&amp;&quot;. &quot;&amp;a[i]" newline="True"/>
+                <assign variable="multiply" expression="multiply*a[i]"/>
+            </for>
+            <output expression="multiply" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
