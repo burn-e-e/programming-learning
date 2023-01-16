@@ -11,10 +11,11 @@ public class sorting_numbers
         count = scan.nextInt();
     
         int num[] = new int[count];
+        int upperbound = 25;
         System.out.println("Enter array elements:");
         for (int i = 0; i < count; i++) 
         {
-            num[i] = scan.nextInt();
+            num[i] = rand.nextInt(upperbound);
         }
         scan.close();
         for (int i = 0; i < count; i++) 
