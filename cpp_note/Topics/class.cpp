@@ -18,10 +18,10 @@ public:
 int main()
 {
      Room room1;
-     room1.length = 42.5;
-     room1.breadth = 30.8;
-     room1.height = 19.2;
-     cout << "Area of Room = " << room1.calculateArea() << endl;
-     cout << "Volume of Room = " << room1.calculateVolume() << endl;
+     room1.length = 42.3;
+     room1.breadth = 30.5;
+     room1.height = 19.1;
+     cout << "Area of Room =" << room1.calculateArea() << endl;
+     cout << "Volume of Room =" << room1.calculateVolume() << endl;
      return 0;
 }
