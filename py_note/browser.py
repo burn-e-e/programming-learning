@@ -1,46 +1,94 @@
-import sys
-from PyQt5.QtCore import QUrl
-from PyQt5.QtWebEngineWidgets import QWebEngineView
-from PyQt5.QtWidgets import QApplication, QMainWindow, QAction
+import requests
+from discord import app_commands, Intents, Client, Interaction
 
-class Browser(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.initUI()
-        
-    def initUI(self):
-        self.setWindowTitle('Web Browser')
-        
-        # Create a QWebEngineView widget and set it as the central widget
-        # of the main window
-        self.webview = QWebEngineView(self)
-        self.setCentralWidget(self.webview)
-        
-        # Create a QToolBar and add it to the main window
-        toolbar = self.addToolBar('Navigation')
-        
-        # Add back and forward buttons to the toolbar
-        back_button = QAction('Back', self)
-        back_button.triggered.connect(self.webview.back)
-        toolbar.addAction(back_button)
-        
-        forward_button = QAction('Forward', self)
-        forward_button.triggered.connect(self.webview.forward)
-        toolbar.addAction(forward_button)
-        
-        # Add a reload button to the toolbar
-        reload_button = QAction('Reload', self)
-        reload_button.triggered.connect(self.webview.reload)
-        toolbar.addAction(reload_button)
-        
-        # Set the initial URL
-        self.webview.setUrl(QUrl('http://www.google.com'))
-        
-        # Show the main window
-        self.show()
-        
+# This will print the information in console
+print("\n".join([
+   "Сайн уу?"
+]))
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    browser = Browser()
-    sys.exit(app.exec_())
+
+while True:
+    # While loop starts and used Python.input() to get the token
+    token = input("Token оо оруулна уу. >")
+
+    # Then validates if the token you provided was correct or not
+    r = requests.get("https://discord.com/api/v10/users/@me", headers={
+        "Authorization": f"Bot {token}"
+    })
+
+    # If the token is correct, it will continue the code
+    data = r.json()
+    if data.get("id", None):
+        break  # Breaks the while loop
+
+    # If the token is incorrect, it will print the error message
+    # and ask you to enter the token again (while Loop)
+    print("\nБуруу Token оруулсан байна.")
+
+
+class FunnyBadge(Client):
+    def __init__(self, *, intents: Intents):
+        super().__init__(intents=intents)
+        self.tree = app_commands.CommandTree(self)
+
+    async def setup_hook(self) -> None:
+        """ This is called when the bot boots, to setup the global commands """
+        await self.tree.sync(guild=None)
+
+
+# Variable to store the bot class and interact with it
+# Since this is a simple bot to run 1 command over slash commands
+# We then do not need any intents to listen to events
+client = FunnyBadge(intents=Intents.none())
+
+
+@client.event
+async def on_ready():
+    """ This is called when the bot is ready and has a connection with Discord
+        It also prints out the bot's invite URL that automatically uses your
+        Client ID to make sure you invite the correct bot with correct scopes.
+    """
+    print("\n".join([
+        f"Бот {client.user} аар амжилттай нэвтэрлээ(ID: {client.user.id})",
+        "",
+        f"Доорх LINK ийг ашиглаж {client.user} bot ийг server-дуу урьна уу.",
+        f"https://discord.com/api/oauth2/authorize?client_id={client.user.id}&scope=applications.commands%20bot"
+    ]))
+
+
+async def _init_command_response(interaction: Interaction) -> None:
+    """ This is called when the command is ran
+        The reason the command is outside of the command function
+        is because there are two ways to run the command and slash commands
+        do not natevily support aliases, so we have to fake it.
+    """
+
+    # Responds in the console that the command has been ran
+    print(f"> {interaction.user} command хэрэглэсэн.")
+
+    # Then responds in the channel with this message
+    await interaction.response.send_message("\n".join([
+        f"Сайн уу? **{interaction.user}**, юу байна даа?."
+    ]))
+
+
+@client.tree.command()
+async def sainuu(interaction: Interaction):
+    """ Says hello or something """
+    # Calls the function "_init_command_response" to respond to the command
+    await _init_command_response(interaction)
+    
+@client.tree.command()
+async def givemebadge(interaction: Interaction):
+    """ Says hello or something, but with a different name """
+    # Calls the function "_init_command_response" to respond to the command
+    await _init_command_response(interaction)
+    
+@client.tree.command()
+async def sdave(interaction: Interaction):
+    """ Says hello or something """
+    # Calls the function "_init_command_response" to respond to the command
+    await _init_command_response(interaction)
+
+# Runs the bot with the token you provided
+client.run(token)
