@@ -3,7 +3,7 @@ int health();
 int main()
 
 {
-     printf("Welcome to the TG.BT");
+     printf("Welcome to the text game.");
 
      return 0;
 }
