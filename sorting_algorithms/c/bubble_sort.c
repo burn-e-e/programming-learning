@@ -4,7 +4,7 @@ int main()
      int n, counter = 0;
      scanf("%d", &n);
      int a[n];
-     printf(" Unsorted array: ");
+     printf("Unsorted array: ");
      for (int i = 0; i < n; i++)
      {
           a[i] = rand() % 10;
@@ -23,7 +23,7 @@ int main()
           }
           counter++;
      }
-     printf(" \n Sorted array: ");
+     printf("\nSorted array: ");
      for (int i = 0; i < n; i++)
      {
           printf("%d ", a[i]);
