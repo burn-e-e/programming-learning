@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-     int n, counter = 0;
+     int n,counter = 0;
      scanf("%d", &n);
      int a[n];
      printf("Unsorted array: ");
