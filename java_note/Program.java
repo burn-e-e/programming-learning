@@ -2,14 +2,14 @@ import java.util.*;
 
 public class Program {
      public static void main(String[] args) {
-          String ner = new String();
+          String name = new String();
           // int too;
           String dun = " ";
           Scanner scan = new Scanner(System.in);
-          System.out.println("Ta neree oruulna uu?");
-          ner = scan.nextLine();
-          System.out.println("Sain baina uu? " + ner);
-          System.out.println("Ta dungee oruulna uu!");
+          System.out.println("Enter your name:");
+          name = scan.nextLine();
+          System.out.println("Hello " + name);
+          System.out.println("Enter your grade:");
           int too = scan.nextInt() ;
           scan.close();
           if (too >= 96) {
@@ -37,7 +37,7 @@ public class Program {
           } else if (too >= 0 && too >= 59) {
                dun = "F";
           }
-          // System.out.println("Tanii dun: "+dun);
+          // System.out.println("Your grade is "+dun);
           switch (too / 10) {
 
                case 10:
