@@ -10,7 +10,7 @@ public class Program {
           ner = scan.nextLine();
           System.out.println("Sain baina uu? " + ner);
           System.out.println("Ta dungee oruulna uu!");
-          int too = scan.nextInt();
+          int too = scan.nextInt() ;
           scan.close();
           if (too >= 96) {
                dun = "A+";
