@@ -1,10 +1,11 @@
 import java.util.Scanner;
+import java.util.Random;
 public class sorting_numbers 
 {
     public static void main(String[] args) 
     {
     	int count, temp;
-    	
+    	Random rd = new Random();
     	//User inputs the array size
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter number of elements you want in the array: ");
@@ -12,10 +13,10 @@ public class sorting_numbers
     
         int num[] = new int[count];
         int upperbound = 25;
-        System.out.println("Enter array elements:");
+        System.out.println("Array elemets will be generated automatically");
         for (int i = 0; i < count; i++) 
         {
-            num[i] = rand.nextInt(upperbound);
+            num[i] = rd.nextInt(upperbound);
         }
         scan.close();
         for (int i = 0; i < count; i++) 
