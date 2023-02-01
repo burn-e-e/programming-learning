@@ -1,0 +1,15 @@
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\ConsoleApplication\ConsoleApplication\bin\Debug\net6.0\ConsoleApplication.exe
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\ConsoleApplication\ConsoleApplication\bin\Debug\net6.0\ConsoleApplication.deps.json
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\ConsoleApplication\ConsoleApplication\bin\Debug\net6.0\ConsoleApplication.runtimeconfig.json
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\ConsoleApplication\ConsoleApplication\bin\Debug\net6.0\ConsoleApplication.dll
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\ConsoleApplication\ConsoleApplication\bin\Debug\net6.0\ConsoleApplication.pdb
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\ConsoleApplication\ConsoleApplication\obj\Debug\net6.0\ConsoleApplication.csproj.AssemblyReference.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\ConsoleApplication\ConsoleApplication\obj\Debug\net6.0\ConsoleApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\ConsoleApplication\ConsoleApplication\obj\Debug\net6.0\ConsoleApplication.AssemblyInfoInputs.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\ConsoleApplication\ConsoleApplication\obj\Debug\net6.0\ConsoleApplication.AssemblyInfo.cs
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\ConsoleApplication\ConsoleApplication\obj\Debug\net6.0\ConsoleApplication.csproj.CoreCompileInputs.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\ConsoleApplication\ConsoleApplication\obj\Debug\net6.0\ConsoleApplication.dll
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\ConsoleApplication\ConsoleApplication\obj\Debug\net6.0\refint\ConsoleApplication.dll
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\ConsoleApplication\ConsoleApplication\obj\Debug\net6.0\ConsoleApplication.pdb
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\ConsoleApplication\ConsoleApplication\obj\Debug\net6.0\ConsoleApplication.genruntimeconfig.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\ConsoleApplication\ConsoleApplication\obj\Debug\net6.0\ref\ConsoleApplication.dll
