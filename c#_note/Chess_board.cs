@@ -1,5 +1,5 @@
 using System;
-					
+
 public class Chess_board
 {
 	public static void Main()
