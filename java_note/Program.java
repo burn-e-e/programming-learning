@@ -64,7 +64,6 @@ public class Program {
                default:
                     System.out.print("Grade: F");
                     break;
-
           }
      }
 }
