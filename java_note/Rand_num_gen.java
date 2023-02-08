@@ -1,12 +1,11 @@
 import java.util.*;
-public class Rand_num_gen{
-     public static void main(String[] args){
-          Random rd= new Random();
-          Scanner scan = new Scanner(System.in);
-          int a = scan.nextInt();
-          int[] massive = new int[a];
-          
-          
-          // System.out.print(a);
+public class Rand_num_gen {
+     public static void main(String[] args) {
+          Random rd = new Random();
+          int[] massive = new int[10];
+          for (int i = 0; i < massive.length; i++) {
+               massive[i] = rd.nextInt(10);
+               System.out.println(i + 1 + " index of " + massive[i]);
+          }
      }
 }
