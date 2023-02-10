@@ -29,161 +29,122 @@
         private void InitializeComponent()
         {
             this.Head_lbl = new System.Windows.Forms.Label();
-            this.Watts_lbl = new System.Windows.Forms.Label();
-            this.watt_lbl = new System.Windows.Forms.Label();
-            this.Watt1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Watt2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Watt3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.amount_txt = new System.Windows.Forms.TextBox();
+            this.fromcombo1 = new System.Windows.Forms.ComboBox();
+            this.tocombo2 = new System.Windows.Forms.ComboBox();
+            this.display_txt = new System.Windows.Forms.Label();
+            this.convert_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Head_lbl
             // 
             this.Head_lbl.AutoSize = true;
             this.Head_lbl.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Head_lbl.Location = new System.Drawing.Point(289, 9);
+            this.Head_lbl.Location = new System.Drawing.Point(177, 9);
             this.Head_lbl.Name = "Head_lbl";
             this.Head_lbl.Size = new System.Drawing.Size(200, 29);
             this.Head_lbl.TabIndex = 1;
             this.Head_lbl.Text = "Power converter";
             // 
-            // Watts_lbl
-            // 
-            this.Watts_lbl.AutoSize = true;
-            this.Watts_lbl.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Watts_lbl.Location = new System.Drawing.Point(324, 120);
-            this.Watts_lbl.Name = "Watts_lbl";
-            this.Watts_lbl.Size = new System.Drawing.Size(80, 22);
-            this.Watts_lbl.TabIndex = 2;
-            this.Watts_lbl.Text = "Kilowatt ";
-            // 
-            // watt_lbl
-            // 
-            this.watt_lbl.AutoSize = true;
-            this.watt_lbl.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.watt_lbl.Location = new System.Drawing.Point(167, 118);
-            this.watt_lbl.Name = "watt_lbl";
-            this.watt_lbl.Size = new System.Drawing.Size(48, 22);
-            this.watt_lbl.TabIndex = 3;
-            this.watt_lbl.Text = "Watt";
-            this.watt_lbl.Click += new System.EventHandler(this.User_lbl_Click);
-            // 
-            // Watt1
-            // 
-            this.Watt1.Location = new System.Drawing.Point(51, 119);
-            this.Watt1.Name = "Watt1";
-            this.Watt1.Size = new System.Drawing.Size(100, 23);
-            this.Watt1.TabIndex = 4;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(167, 218);
+            this.label1.Location = new System.Drawing.Point(166, 112);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 22);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Watt";
-            this.label1.Click += new System.EventHandler(this.User_lbl_Click);
+            this.label1.Size = new System.Drawing.Size(81, 15);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Enter Amount";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(324, 215);
+            this.label2.Location = new System.Drawing.Point(166, 164);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 22);
+            this.label2.Size = new System.Drawing.Size(80, 15);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Megawatt ";
-            // 
-            // Watt2
-            // 
-            this.Watt2.Location = new System.Drawing.Point(51, 214);
-            this.Watt2.Name = "Watt2";
-            this.Watt2.Size = new System.Drawing.Size(100, 23);
-            this.Watt2.TabIndex = 4;
+            this.label2.Text = "Convert From";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(167, 328);
+            this.label3.Location = new System.Drawing.Point(166, 222);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 22);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Watt";
-            this.label3.Click += new System.EventHandler(this.User_lbl_Click);
+            this.label3.Size = new System.Drawing.Size(64, 15);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Convert To";
             // 
-            // label4
+            // amount_txt
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(324, 328);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 22);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Milliwatt ";
+            this.amount_txt.Location = new System.Drawing.Point(278, 104);
+            this.amount_txt.Name = "amount_txt";
+            this.amount_txt.Size = new System.Drawing.Size(136, 23);
+            this.amount_txt.TabIndex = 3;
             // 
-            // Watt3
+            // fromcombo1
             // 
-            this.Watt3.Location = new System.Drawing.Point(42, 327);
-            this.Watt3.Name = "Watt3";
-            this.Watt3.Size = new System.Drawing.Size(100, 23);
-            this.Watt3.TabIndex = 4;
+            this.fromcombo1.FormattingEnabled = true;
+            this.fromcombo1.Items.AddRange(new object[] {
+            "Watt",
+            "Kilowatt",
+            "Megawatt",
+            "Milliwatt"});
+            this.fromcombo1.Location = new System.Drawing.Point(278, 156);
+            this.fromcombo1.Name = "fromcombo1";
+            this.fromcombo1.Size = new System.Drawing.Size(110, 23);
+            this.fromcombo1.TabIndex = 4;
             // 
-            // button1
+            // tocombo2
             // 
-            this.button1.Location = new System.Drawing.Point(232, 120);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Convert";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.tocombo2.FormattingEnabled = true;
+            this.tocombo2.Items.AddRange(new object[] {
+            "Watt",
+            "Kilowatt",
+            "Megawatt",
+            "Milliwatt"});
+            this.tocombo2.Location = new System.Drawing.Point(278, 214);
+            this.tocombo2.Name = "tocombo2";
+            this.tocombo2.Size = new System.Drawing.Size(110, 23);
+            this.tocombo2.TabIndex = 4;
             // 
-            // button2
+            // display_txt
             // 
-            this.button2.Location = new System.Drawing.Point(232, 217);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Convert";
-            this.button2.UseVisualStyleBackColor = true;
+            this.display_txt.AutoSize = true;
+            this.display_txt.Location = new System.Drawing.Point(227, 289);
+            this.display_txt.Name = "display_txt";
+            this.display_txt.Size = new System.Drawing.Size(115, 15);
+            this.display_txt.TabIndex = 2;
+            this.display_txt.Text = "Converted Amount: ";
             // 
-            // button3
+            // convert_btn
             // 
-            this.button3.Location = new System.Drawing.Point(232, 328);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Convert";
-            this.button3.UseVisualStyleBackColor = true;
+            this.convert_btn.Location = new System.Drawing.Point(420, 103);
+            this.convert_btn.Name = "convert_btn";
+            this.convert_btn.Size = new System.Drawing.Size(75, 23);
+            this.convert_btn.TabIndex = 5;
+            this.convert_btn.Text = "Convert";
+            this.convert_btn.UseVisualStyleBackColor = true;
+            this.convert_btn.Click += new System.EventHandler(this.convert_btn_Click);
             // 
             // Power_converter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.Watt3);
-            this.Controls.Add(this.Watt2);
-            this.Controls.Add(this.Watt1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.Watts_lbl);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(589, 385);
+            this.Controls.Add(this.convert_btn);
+            this.Controls.Add(this.tocombo2);
+            this.Controls.Add(this.fromcombo1);
+            this.Controls.Add(this.amount_txt);
+            this.Controls.Add(this.display_txt);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.watt_lbl);
             this.Controls.Add(this.Head_lbl);
             this.Name = "Power_converter";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Power converter";
             this.Load += new System.EventHandler(this.Power_converter_Load);
             this.ResumeLayout(false);
@@ -194,17 +155,13 @@
         #endregion
 
         private Label Head_lbl;
-        private Label Watts_lbl;
-        private Label watt_lbl;
-        private TextBox Watt1;
         private Label label1;
         private Label label2;
-        private TextBox Watt2;
         private Label label3;
-        private Label label4;
-        private TextBox Watt3;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private TextBox amount_txt;
+        private ComboBox fromcombo1;
+        private ComboBox tocombo2;
+        private Label display_txt;
+        private Button convert_btn;
     }
 }

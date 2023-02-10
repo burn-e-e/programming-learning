@@ -12,28 +12,32 @@ namespace LoginForm
 {
     public partial class Power_converter : Form
     {
-        public int a, b;
         public Power_converter()
         {
             InitializeComponent();
         }
+        private void convert_btn_Click(object sender, EventArgs e)
+        {
+            double i = double.Parse(amount_txt.Text); 
+            if (fromcombo1.SelectedItem == "Watt" && tocombo2.SelectedItem=="Kilowatt")
+            {
+                double conver = i * 0.001;
+                display_txt.Text = "Converted Amount: " + conver;
+            }
+            if (fromcombo1.SelectedItem == "Watt" && tocombo2.SelectedItem == "Megawatt")
+            {
+                double conver = i * 0.000001;
+                display_txt.Text = "Converted Amount: " + conver;
+            }
+            if (fromcombo1.SelectedItem == "Watt" && tocombo2.SelectedItem == "Milliwatt")
+            {
+                double conver = i * 1000;
+                display_txt.Text = "Converted Amount: " + conver;
+            }
+        }
+
 
         private void Power_converter_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void User_lbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
-
-        private void button1_Click(object sender, EventArgs e)
         {
 
         }

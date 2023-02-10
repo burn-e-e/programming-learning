@@ -1,10 +1,8 @@
 C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\bin\Debug\net6.0-windows\LoginForm.exe
-C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\bin\Debug\net6.0-windows\LoginForm.deps.json
-C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\bin\Debug\net6.0-windows\LoginForm.runtimeconfig.json
 C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\bin\Debug\net6.0-windows\LoginForm.dll
-C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\bin\Debug\net6.0-windows\LoginForm.pdb
 C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\obj\Debug\net6.0-windows\LoginForm.csproj.AssemblyReference.cache
 C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\obj\Debug\net6.0-windows\LoginForm.LoginForm.resources
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\obj\Debug\net6.0-windows\LoginForm.Power_converter.resources
 C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\obj\Debug\net6.0-windows\LoginForm.csproj.GenerateResource.cache
 C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\obj\Debug\net6.0-windows\LoginForm.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\obj\Debug\net6.0-windows\LoginForm.AssemblyInfoInputs.cache
@@ -13,6 +11,8 @@ C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginFo
 C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\obj\Debug\net6.0-windows\LoginForm.dll
 C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\obj\Debug\net6.0-windows\refint\LoginForm.dll
 C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\obj\Debug\net6.0-windows\LoginForm.pdb
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\bin\Debug\net6.0-windows\LoginForm.deps.json
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\bin\Debug\net6.0-windows\LoginForm.runtimeconfig.json
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\bin\Debug\net6.0-windows\LoginForm.pdb
 C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\obj\Debug\net6.0-windows\LoginForm.genruntimeconfig.cache
 C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\obj\Debug\net6.0-windows\ref\LoginForm.dll
-C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\LoginForm\LoginForm\obj\Debug\net6.0-windows\LoginForm.Power_converter.resources
