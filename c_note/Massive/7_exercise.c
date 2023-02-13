@@ -31,6 +31,6 @@ void merge(int a[], int m, int b[], int n, int sorted[])
      j = k = 0;
      for (i = 0; i < m + n;)
      {
-          if
+          if()
      }
 }
