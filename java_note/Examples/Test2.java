@@ -1,3 +1,4 @@
+package Examples;
 public class Test2 {
      public static void main(String[] args) {
           int a[];
@@ -19,5 +20,17 @@ public class Test2 {
                }
                System.out.print("\n");
           }
+          System.out.println();
+          System.out.println();
+          int[][] anArray = { { 100, 200 },
+                    { 300 },
+                    { 600, 700, 800 }
+          };
+          for (int i = 0; i < anArray.length; i++) {
+               for (int j = 0; j < anArray[i].length; j++)
+                    System.out.print(anArray[i][j] + " ");
+               System.out.println();
+          }
+
      }
 }

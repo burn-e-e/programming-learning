@@ -1,3 +1,4 @@
+package Examples;
 import java.util.Scanner;
 public class Stone {
      static public void main(String[] args){

@@ -1,3 +1,4 @@
+package Examples;
 // Create a Main class
 public class OOP_2 {
   int x = 5;  

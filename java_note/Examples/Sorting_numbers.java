@@ -1,6 +1,7 @@
+package Examples;
 import java.util.Scanner;
 import java.util.Random;
-public class sorting_numbers 
+public class Sorting_numbers 
 {
     public static void main(String[] args) 
     {
