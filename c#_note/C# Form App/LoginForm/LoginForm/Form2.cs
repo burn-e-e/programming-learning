@@ -34,6 +34,12 @@ namespace LoginForm
                 double conver = i * 1000;
                 display_txt.Text = "Converted Amount: " + conver;
             }
+            if (fromcombo1.SelectedItem == "Watt" && tocombo2.SelectedItem == "Watt")
+            {
+                double conver = i;
+                //display_txt.Text = "Converted Amount: " + conver;
+                MessageBox.Show("Error Same convert", "Error");
+            }
         }
 
 
