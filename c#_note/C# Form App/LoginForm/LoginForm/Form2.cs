@@ -39,6 +39,7 @@ namespace LoginForm
                 double conver = i;
                 //display_txt.Text = "Converted Amount: " + conver;
                 MessageBox.Show("Error Same convert", "Error");
+                MessageBox.Show("123");
             }
         }
 
