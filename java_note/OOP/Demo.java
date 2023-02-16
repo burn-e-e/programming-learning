@@ -46,6 +46,7 @@ class Demo {
      public static void main(String args[]) {
           Student student = new Student("Jack", 60, 70);
           System.out.println(student.calcTotal());
+          
      }
 
 }
