@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\4burn\\Documents\\GitHub\\programming-learning\\c#_note\\C# Form App\\LoginForm\\LoginForm\\LoginForm.csproj",
-      "projectName": "LoginForm",
-      "projectPath": "C:\\Users\\4burn\\Documents\\GitHub\\programming-learning\\c#_note\\C# Form App\\LoginForm\\LoginForm\\LoginForm.csproj",
+      "projectUniqueName": "C:\\Users\\4burn\\Documents\\GitHub\\programming-learning\\c#_note\\C# Form App\\LoginForm\\LoginForm\\Forms.csproj",
+      "projectName": "Forms",
+      "projectPath": "C:\\Users\\4burn\\Documents\\GitHub\\programming-learning\\c#_note\\C# Form App\\LoginForm\\LoginForm\\Forms.csproj",
       "packagesPath": "C:\\Users\\4burn\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\4burn\\Documents\\GitHub\\programming-learning\\c#_note\\C# Form App\\LoginForm\\LoginForm\\obj\\",
       "projectStyle": "PackageReference",
