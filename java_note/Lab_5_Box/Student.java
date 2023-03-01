@@ -5,7 +5,7 @@ public class Student {
      public void setName(String n){
           name = n;
      }
-     public String getName(){
+      String getName(){
           return name;
      }
 }
