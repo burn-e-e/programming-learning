@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\4burn\\Documents\\GitHub\\programming-learning\\c#_note\\C# Form App\\Lab_3\\Lab_3\\Lab_3.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\4burn\\Documents\\GitHub\\programming-learning\\c#_note\\C# Form App\\Lab_3\\Lab_3\\Lab_3.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\4burn\\Documents\\GitHub\\programming-learning\\c#_note\\C# Form App\\Lab_3\\Lab_3\\Lab_3.csproj",
+        "projectName": "Lab_3",
+        "projectPath": "C:\\Users\\4burn\\Documents\\GitHub\\programming-learning\\c#_note\\C# Form App\\Lab_3\\Lab_3\\Lab_3.csproj",
+        "packagesPath": "C:\\Users\\4burn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\4burn\\Documents\\GitHub\\programming-learning\\c#_note\\C# Form App\\Lab_3\\Lab_3\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\4burn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
