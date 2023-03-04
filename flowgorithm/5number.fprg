@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Logan Anderson"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-03 02:17:01 PM"/>
+        <attribute name="created" value="TG9nYW4gQW5kZXJzb247REVTS1RPUC1MT0dBTjsyMDIxLTEwLTE2OzAyOjM3OjQ0IEFNOzM1Njk="/>
+        <attribute name="edited" value="TG9nYW4gQW5kZXJzb247REVTS1RPUC1MT0dBTjsyMDIxLTEwLTE2OzAyOjUwOjA1IEFNOzE7MzY2OQ=="/>
+        <attribute name="edited" value="NGJ1cm47REVTS1RPUC1LUjFKVFZBOzIwMjMtMDMtMDM7MDI6MTc6MDEgUE07MTsyOTY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="too" type="Integer" array="False" size=""/>
+            <assign variable="too" expression="5"/>
+            <declare name="arr" type="Integer" array="True" size="too"/>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <declare name="icounter" type="Integer" array="False" size=""/>
+            <declare name="Placeholder" type="Integer" array="False" size=""/>
+            <declare name="input" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <assign variable="icounter" expression="0"/>
+            <for variable="count" start="0" end="too- 1" direction="inc" step="1">
+                <output expression="&quot;Unduriig oruul&quot;" newline="True"/>
+                <input variable="input"/>
+                <assign variable="arr[count]" expression="input"/>
+            </for>
+            <assign variable="count" expression="0"/>
+            <for variable="count" start="0" end="too- 1" direction="inc" step="1">
+                <for variable="icounter" start="0" end="too- 1 - count- 1" direction="inc" step="1">
+                    <if expression="arr[icounter] &gt; arr[icounter + 1]">
+                        <then>
+                            <assign variable="Placeholder" expression="arr[icounter]"/>
+                            <assign variable="arr[icounter]" expression="arr[icounter + 1]"/>
+                            <assign variable="arr[icounter + 1]" expression="Placeholder"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <assign variable="count" expression="0"/>
+            <for variable="count" start="0" end="too- 1" direction="inc" step="1">
+                <output expression="arr[count]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
