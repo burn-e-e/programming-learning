@@ -35,7 +35,6 @@
             clear_btn = new Button();
             female_radiobtn = new RadioButton();
             male_radiobtn = new RadioButton();
-            age_txtbox = new TextBox();
             phoneNumber_txtbox = new TextBox();
             mail_txtbox = new TextBox();
             studentCode_txtbox = new TextBox();
@@ -61,6 +60,7 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
+            dateTimePicker1 = new DateTimePicker();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -78,11 +78,11 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(224, 224, 224);
+            panel1.Controls.Add(dateTimePicker1);
             panel1.Controls.Add(publish_btn);
             panel1.Controls.Add(clear_btn);
             panel1.Controls.Add(female_radiobtn);
             panel1.Controls.Add(male_radiobtn);
-            panel1.Controls.Add(age_txtbox);
             panel1.Controls.Add(phoneNumber_txtbox);
             panel1.Controls.Add(mail_txtbox);
             panel1.Controls.Add(studentCode_txtbox);
@@ -98,7 +98,7 @@
             panel1.Controls.Add(Title);
             panel1.Location = new Point(11, 12);
             panel1.Name = "panel1";
-            panel1.Size = new Size(302, 427);
+            panel1.Size = new Size(398, 427);
             panel1.TabIndex = 1;
             // 
             // publish_btn
@@ -143,13 +143,6 @@
             male_radiobtn.TabStop = true;
             male_radiobtn.Text = "Male";
             male_radiobtn.UseVisualStyleBackColor = true;
-            // 
-            // age_txtbox
-            // 
-            age_txtbox.Location = new Point(78, 179);
-            age_txtbox.Name = "age_txtbox";
-            age_txtbox.Size = new Size(60, 27);
-            age_txtbox.TabIndex = 6;
             // 
             // phoneNumber_txtbox
             // 
@@ -216,11 +209,11 @@
             // Age_txt
             // 
             Age_txt.AutoSize = true;
-            Age_txt.Location = new Point(30, 181);
+            Age_txt.Location = new Point(26, 181);
             Age_txt.Name = "Age_txt";
-            Age_txt.Size = new Size(42, 20);
+            Age_txt.Size = new Size(106, 20);
             Age_txt.TabIndex = 4;
-            Age_txt.Text = " Нас:";
+            Age_txt.Text = " Төрсөн өдөр:";
             // 
             // Gender_txt
             // 
@@ -379,6 +372,13 @@
             label6.TabIndex = 5;
             label6.Text = "Утасны дугаар:";
             // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(138, 181);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(250, 27);
+            dateTimePicker1.TabIndex = 10;
+            // 
             // Student_Form
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -414,7 +414,6 @@
         private Label Gender_txt;
         private Button publish_btn;
         private Button clear_btn;
-        private TextBox age_txtbox;
         private TextBox phoneNumber_txtbox;
         private TextBox mail_txtbox;
         private TextBox studentCode_txtbox;
@@ -431,5 +430,6 @@
         private Label label5;
         private Label phoneShow;
         private Label label6;
+        private DateTimePicker dateTimePicker1;
     }
 }

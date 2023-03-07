@@ -10,24 +10,31 @@ namespace Lab_3
             InitializeComponent();
         }
 
-        public class Post
+        public class Suragch
         {
             public String surname = "";
             public String firstname = "";
-            public String age = "";
+            public DateTime birthday = new DateTime();
             public String code = "";
             public String email = "";
             public String phone = "";
-
+            public int calcAge(DateTime tursun)
+            {
+                int nas;
+                DateTime today = DateTime.Now;
+                return nas = tursun.Year - today.Year;
+            }
         }
         String gender = "";
         public void publish_btn_Click(object sender, EventArgs e)
         {
 
-            Post suragch1 = new Post();
+            Suragch suragch1 = new Suragch();
             suragch1.surname = surName_txtbox.Text;
             suragch1.firstname = firstName_txtbox.Text;
-            suragch1.age = age_txtbox.Text;
+            //suragch1.birthday = dateTimePicker1.Value;
+            suragch1.calcAge(dateTimePicker1.Value);
+            //suragch1.tursunognoo = age_txtbox.Text;
             suragch1.code = studentCode_txtbox.Text;
             suragch1.email = mail_txtbox.Text;
             suragch1.phone = phoneNumber_txtbox.Text;
@@ -36,6 +43,7 @@ namespace Lab_3
             codeShow.Text = suragch1.code;
             showEmail.Text = suragch1.email;
             phoneShow.Text = suragch1.phone;
+            /*
             if (Int32.Parse(suragch1.age) < 18)
             {
                 DialogResult res = MessageBox.Show("Таны нас 18 аас доош байна.", "Анхааруулга", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -48,6 +56,7 @@ namespace Lab_3
             {
                 age_show.Text = suragch1.age + " настай";
             }
+            */
             if (male_radiobtn.Checked)
             {
                 gender = "Эрэгтэй";
@@ -75,7 +84,7 @@ namespace Lab_3
         {
             surName_txtbox.Clear();
             firstName_txtbox.Clear();
-            age_txtbox.Clear();
+            //age_txtbox.Clear();
             studentCode_txtbox.Clear();
             mail_txtbox.Clear();
             phoneNumber_txtbox.Clear();
