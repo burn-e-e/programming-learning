@@ -22,7 +22,7 @@ namespace Lab_3
             {
                 int nas;
                 DateTime today = DateTime.Now;
-                return nas = tursun.Year - today.Year;
+                return nas = today.Year - tursun.Year;
             }
         }
         String gender = "";
@@ -33,12 +33,14 @@ namespace Lab_3
             suragch1.surname = surName_txtbox.Text;
             suragch1.firstname = firstName_txtbox.Text;
             //suragch1.birthday = dateTimePicker1.Value;
+
             suragch1.calcAge(dateTimePicker1.Value);
+
             //suragch1.tursunognoo = age_txtbox.Text;
             suragch1.code = studentCode_txtbox.Text;
             suragch1.email = mail_txtbox.Text;
             suragch1.phone = phoneNumber_txtbox.Text;
-
+            age_show.Text = suragch1.calcAge(dateTimePicker1.Value).ToString();
             name_show.Text = suragch1.surname + " " + suragch1.firstname;
             codeShow.Text = suragch1.code;
             showEmail.Text = suragch1.email;
