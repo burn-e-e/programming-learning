@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 class Study_before {
      int level;
+
      Study_before(int lvl) {
           level = lvl;
      }
@@ -27,6 +28,7 @@ class Study_before {
 
 class Never_studydied {
      int level;
+
      Never_studydied(int lvl) {
           level = lvl;
      }
@@ -57,7 +59,7 @@ public class bd_2 {
           System.out.println("Have you ever studied before? Yes[1] or No[0]");
           int studied = sc.nextInt();
           int askLvl;
-          sc.close();
+
           if (studied == 1) {
                System.out.println(question);
                askLvl = sc.nextInt();
@@ -70,5 +72,6 @@ public class bd_2 {
                Never_studydied myobj = new Never_studydied(askLvl);
                myobj.showLevel();
           }
+          sc.close();
      }
 }

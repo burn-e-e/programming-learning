@@ -1,22 +1,14 @@
+package bd;
+
 public class bd_3 {
-     String name;
-
-     String A(String input) {
-          name = input;
+     public static int fac(int n) {
+          if (n <= 1)
+               return 1;
+          else
+               return (n * fac(n - 1));
      }
 
-     String A() {
-          this("John");
-     }
-
-     void show() {
-          System.out.println(name);
-     }
-
-     public static void main(String args[]) {
-          A p1 = new A("James");
-          A p2 = new A();
-          p1.show();
-          p2.show();
+     public static void main() {
+          System.out.println(fac(5));
      }
 }

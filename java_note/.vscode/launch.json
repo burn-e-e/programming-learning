@@ -1,0 +1,231 @@
+{
+     // Use IntelliSense to learn about possible attributes.
+     // Hover to view descriptions of existing attributes.
+     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+     "version": "0.2.0",
+     "configurations": [
+     {
+          "type": "java",
+          "request": "attach",
+          "name": "Attach by Process ID",
+          "processId": "${command:PickJavaProcess}"
+     },
+     
+          {
+               "type": "java",
+               "name": "Current File",
+               "request": "launch",
+               "mainClass": "${file}"
+          },
+          {
+               "type": "java",
+               "name": "Bodlogo",
+               "request": "launch",
+               "mainClass": "Bodlogo",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "The_Descent",
+               "request": "launch",
+               "mainClass": "Clash.The_Descent",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "OOP_2",
+               "request": "launch",
+               "mainClass": "Examples.OOP_2",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Program",
+               "request": "launch",
+               "mainClass": "Examples.Program",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Rand_num_gen",
+               "request": "launch",
+               "mainClass": "Examples.Rand_num_gen",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Self",
+               "request": "launch",
+               "mainClass": "Examples.Self",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Sorting_numbers",
+               "request": "launch",
+               "mainClass": "Examples.Sorting_numbers",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Squaresum",
+               "request": "launch",
+               "mainClass": "Examples.Squaresum",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Stone",
+               "request": "launch",
+               "mainClass": "Examples.Stone",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Test",
+               "request": "launch",
+               "mainClass": "Examples.Test",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Test2",
+               "request": "launch",
+               "mainClass": "Examples.Test2",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Exchange_1",
+               "request": "launch",
+               "mainClass": "Exchange_1",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Java_Stdin_and_Stdout_II",
+               "request": "launch",
+               "mainClass": "HackerRank.Java_Stdin_and_Stdout_II",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Java_if_else",
+               "request": "launch",
+               "mainClass": "HackerRank.Java_if_else",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Kass_3",
+               "request": "launch",
+               "mainClass": "Kass_3",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Bodlogo1",
+               "request": "launch",
+               "mainClass": "Lab_3.Bodlogo1",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Bodlogo2",
+               "request": "launch",
+               "mainClass": "Lab_3.Bodlogo2",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Main",
+               "request": "launch",
+               "mainClass": "Lab_5_2.Main",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Calling_Constructor",
+               "request": "launch",
+               "mainClass": "OOP.Calling_Constructor",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Demo",
+               "request": "launch",
+               "mainClass": "OOP.Demo",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Fibonacci",
+               "request": "launch",
+               "mainClass": "OOP.Fibonacci",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Getters_Setters",
+               "request": "launch",
+               "mainClass": "OOP.Getters_Setters",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Method_Overloading",
+               "request": "launch",
+               "mainClass": "OOP.Method_Overloading",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Store_2",
+               "request": "launch",
+               "mainClass": "Store_2",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "ThreeDMatrix",
+               "request": "launch",
+               "mainClass": "ThreeDMatrix",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Title_4",
+               "request": "launch",
+               "mainClass": "Title_4",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "Triangle_5",
+               "request": "launch",
+               "mainClass": "Triangle_5",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "bd_1",
+               "request": "launch",
+               "mainClass": "bd.bd_1",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "bd_2",
+               "request": "launch",
+               "mainClass": "bd.bd_2",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
+               "name": "rand_massive",
+               "request": "launch",
+               "mainClass": "rand_massive",
+               "projectName": "java_note_421a147c"
+          }
+     ]
+}
