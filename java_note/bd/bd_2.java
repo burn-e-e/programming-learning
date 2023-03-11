@@ -3,8 +3,12 @@ package bd;
 import java.util.Scanner;
 
 class Study_before {
+     int level;
      Study_before(int lvl) {
-          int level = lvl;
+          level = lvl;
+     }
+
+     void showLevel() {
           switch (level) {
                case 1:
                     System.out.println("Pay 250,000");
@@ -22,9 +26,14 @@ class Study_before {
 }
 
 class Never_studydied {
+     int level;
      Never_studydied(int lvl) {
-          int level = lvl;
+          level = lvl;
+     }
+
+     void showLevel() {
           switch (level) {
+
                case 1:
                     System.out.println("Pay 250,000");
                     break;
@@ -48,15 +57,18 @@ public class bd_2 {
           System.out.println("Have you ever studied before? Yes[1] or No[0]");
           int studied = sc.nextInt();
           int askLvl;
+          sc.close();
           if (studied == 1) {
                System.out.println(question);
                askLvl = sc.nextInt();
                Study_before myobj = new Study_before(askLvl);
+               myobj.showLevel();
           }
           if (studied == 0) {
                System.out.println(question);
                askLvl = sc.nextInt();
                Never_studydied myobj = new Never_studydied(askLvl);
+               myobj.showLevel();
           }
      }
 }
