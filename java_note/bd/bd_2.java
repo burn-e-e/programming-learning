@@ -1,5 +1,3 @@
-package bd;
-
 import java.util.Scanner;
 
 class Study_before {

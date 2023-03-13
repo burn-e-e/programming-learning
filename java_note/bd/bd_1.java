@@ -1,5 +1,3 @@
-package bd;
-
 import java.util.Scanner;
 
 public class bd_1 {
