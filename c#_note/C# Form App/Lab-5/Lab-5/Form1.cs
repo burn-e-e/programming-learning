@@ -1,8 +1,8 @@
 namespace Lab_5
 {
-    public partial class Form1 : Form
+    public partial class JuiceBarForm : Form
     {
-        public Form1()
+        public JuiceBarForm()
         {
             InitializeComponent();
         }
