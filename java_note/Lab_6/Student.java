@@ -19,9 +19,7 @@ public class Student {
                System.out.println(name.charAt(i));
           }
      }
-     void display(){
-          System.out.println("Name: " + name);
-          System.out.println("Age: " + age);
-          System.out.println("GPA: " + gpa);
-     }
+     String display(){
+          return name + "" + age + "" + gpa;
+     } 
 }
