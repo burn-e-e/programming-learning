@@ -19,7 +19,7 @@ public class Student {
                System.out.println(name.charAt(i));
           }
      }
-     String display(){
+     public String toString(){
           return name + "" + age + "" + gpa;
      } 
 }
