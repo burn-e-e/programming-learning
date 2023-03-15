@@ -5,21 +5,24 @@ public class Student {
      private String name;
      private double gpa;
 
-     Student(String b,int a,  double c) {
+     Student(String b, int a, double c) {
           this.age = a;
           this.name = b;
           this.gpa = c;
      }
-     String getName(){
+
+     String getName() {
           return name;
      }
-     void charName(){
+
+     void charName() {
           int a = name.length();
-          for(int i = 0; i < a; i++){
+          for (int i = 0; i < a; i++) {
                System.out.println(name.charAt(i));
           }
      }
-     public String toString(){
+
+     public String toString() {
           return name + "" + age + "" + gpa;
-     } 
+     }
 }
