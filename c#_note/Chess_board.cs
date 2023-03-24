@@ -1,5 +1,4 @@
 using System;
-
 public class Chess_board
 {
 	public static void Main()
@@ -8,6 +7,7 @@ public class Chess_board
 		for(int i=0; i<8; i++){
 			for(int j=0; j<8; j++){
 				if((i+j)%2 == 0)
+				Console.Write("Array: ");
 				Console.Write(0 +" ");
 			else
 				Console.Write(1+" ");
