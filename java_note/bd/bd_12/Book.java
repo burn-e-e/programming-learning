@@ -12,13 +12,18 @@ public class Book {
           this.publishedDate = publishedDate;
      }
      void display(){
+          System.out.println("-------------------------------");
           System.out.println("Book Name: " + bookName);
           System.out.println("Author: " + author);
           System.out.println("Price: " + price);
           System.out.println("Published Date: " + publishedDate);
+          System.out.println("-------------------------------");
      }
      void changePrice(int price){
           this.price = price;
+     }
+     String dateTime(){
+          return publishedDate;
      }
      
 }
