@@ -23,4 +23,14 @@ public class Teacher {
                System.out.println("Teacher's salary less than " + salary);
           }
      }
+     void changeSalary(int salary){
+          this.teacherSalary = salary;
+          if(int i=0; i<teacherSalary.length; i++){
+               if(teacherSalary[i] > salary){
+                    System.out.println("Teacher's salary greater than " + salary);
+               }else{
+                    System.out.println("Teacher's salary less than " + salary);
+               }
+          }
+     }
 }
