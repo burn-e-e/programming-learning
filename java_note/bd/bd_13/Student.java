@@ -12,7 +12,12 @@ public class Student {
           this.studentGpa = studentGpa;
           this.studentCode = studentCode;
      }
-
+     void setName(String name){
+          this.studentName = name;
+     }
+     String getName(){
+          return studentName;
+     }
      public String toString() {
           return "Name: " + studentName + " Age: " + studentAge + " GPA: " + studentGpa + " Code: " + studentCode;
      }
