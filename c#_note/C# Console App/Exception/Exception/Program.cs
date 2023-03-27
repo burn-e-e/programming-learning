@@ -1,4 +1,4 @@
-﻿namespace ExceptionTutorial
+﻿namespace Exception
 {
     class HelloException
     {
@@ -16,10 +16,6 @@
             }
             catch (DivideByZeroException e){
                 Console.WriteLine("Error " + e.Message);
-            }
-            finally
-            {
-                Console.WriteLine("Finally");
             }
             Console.WriteLine("Let's go!");
             Console.Read();
