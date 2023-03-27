@@ -1,0 +1,15 @@
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Exception\Exception\bin\Debug\net6.0\Exception.exe
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Exception\Exception\bin\Debug\net6.0\Exception.deps.json
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Exception\Exception\bin\Debug\net6.0\Exception.runtimeconfig.json
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Exception\Exception\bin\Debug\net6.0\Exception.dll
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Exception\Exception\bin\Debug\net6.0\Exception.pdb
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Exception\Exception\obj\Debug\net6.0\Exception.csproj.AssemblyReference.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Exception\Exception\obj\Debug\net6.0\Exception.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Exception\Exception\obj\Debug\net6.0\Exception.AssemblyInfoInputs.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Exception\Exception\obj\Debug\net6.0\Exception.AssemblyInfo.cs
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Exception\Exception\obj\Debug\net6.0\Exception.csproj.CoreCompileInputs.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Exception\Exception\obj\Debug\net6.0\Exception.dll
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Exception\Exception\obj\Debug\net6.0\refint\Exception.dll
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Exception\Exception\obj\Debug\net6.0\Exception.pdb
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Exception\Exception\obj\Debug\net6.0\Exception.genruntimeconfig.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Exception\Exception\obj\Debug\net6.0\ref\Exception.dll
