@@ -1,18 +1,28 @@
-﻿using System;
-
-class Class1
+﻿namespace ExceptionTutorial
 {
-    static void Main(string[] args)
+    class HelloException
     {
-        int huvaagdagch = 0, huvaagch = 0, hariu = 0;
-        try
+        public static void Main(string[] args)
         {
-            hariu = huvaagdagch / huvaagch;
+            Console.WriteLine("Three");
+            int value = 10 / 2; // This division no problem.
+            Console.WriteLine("Two");
+            value = 10 / 1; // This division no problem.
+            Console.WriteLine("One");
+            int d = 0;
+            try
+            {
+                value = 10 / d; // This division has problem, divided by 0.
+            }
+            catch (DivideByZeroException e){
+                Console.WriteLine("Error " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Finally");
+            }
+            Console.WriteLine("Let's go!");
+            Console.Read();
         }
-        catch (System.DivideByZeroException zail)
-        {
-            Console.WriteLine("{0} exception ajillav", zail);
-        }
-        Console.ReadLine();
     }
 }
