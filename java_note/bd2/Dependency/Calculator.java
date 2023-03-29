@@ -1,4 +1,4 @@
-package Dependency;
+package bd2.Dependency;
 
 public class Calculator {
      int a,b;

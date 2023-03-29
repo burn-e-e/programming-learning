@@ -1,4 +1,4 @@
-package Dependency;
+package bd2.Dependency;
 
 public class DemoDependency {
      public static void main(String[] args) {

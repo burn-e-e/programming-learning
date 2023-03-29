@@ -1,4 +1,4 @@
-package Dependency;
+package bd2.Dependency;
 
 public class MathOperations {
    public int sum(int a, int b) {
