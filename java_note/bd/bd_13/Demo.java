@@ -20,6 +20,6 @@ public class Demo {
                }
                System.out.println(students[i].toString());
           }
-
+          sc.close();
      }
 }
