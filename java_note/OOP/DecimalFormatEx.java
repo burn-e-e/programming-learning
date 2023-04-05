@@ -10,5 +10,6 @@ public class DecimalFormatEx {
      int a = 456;
      f.format("%7d", a);
      System.out.format("%10d", a);
+     f.close();
     }
 }
