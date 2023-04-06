@@ -4,7 +4,6 @@ public class Student {
      private String name;
      private int code;
      private ArrayList<Teacher> teachers;
-   
      public Student(String name, int code) {
        this.name = name;
        this.code = code;
