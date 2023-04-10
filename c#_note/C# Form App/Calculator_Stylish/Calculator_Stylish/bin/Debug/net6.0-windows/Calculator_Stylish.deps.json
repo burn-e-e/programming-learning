@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Calculator_Stylish/1.0.0": {
+        "runtime": {
+          "Calculator_Stylish.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Calculator_Stylish/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

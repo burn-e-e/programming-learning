@@ -11,6 +11,7 @@ public class Teacher {
           this.name = name;
           this.major = major;
           this.students = new ArrayList<>();
+          
      }
 
      public void setStudents(Student student) {
