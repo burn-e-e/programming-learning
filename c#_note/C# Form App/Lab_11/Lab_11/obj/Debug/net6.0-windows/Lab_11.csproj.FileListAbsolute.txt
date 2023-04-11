@@ -1,0 +1,17 @@
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Lab_11\Lab_11\obj\Debug\net6.0-windows\Lab_11.csproj.AssemblyReference.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Lab_11\Lab_11\obj\Debug\net6.0-windows\Lab_11.Form1.resources
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Lab_11\Lab_11\obj\Debug\net6.0-windows\Lab_11.csproj.GenerateResource.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Lab_11\Lab_11\obj\Debug\net6.0-windows\Lab_11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Lab_11\Lab_11\obj\Debug\net6.0-windows\Lab_11.AssemblyInfoInputs.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Lab_11\Lab_11\obj\Debug\net6.0-windows\Lab_11.AssemblyInfo.cs
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Lab_11\Lab_11\obj\Debug\net6.0-windows\Lab_11.csproj.CoreCompileInputs.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Lab_11\Lab_11\bin\Debug\net6.0-windows\Lab_11.exe
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Lab_11\Lab_11\bin\Debug\net6.0-windows\Lab_11.deps.json
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Lab_11\Lab_11\bin\Debug\net6.0-windows\Lab_11.runtimeconfig.json
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Lab_11\Lab_11\bin\Debug\net6.0-windows\Lab_11.dll
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Lab_11\Lab_11\bin\Debug\net6.0-windows\Lab_11.pdb
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Lab_11\Lab_11\obj\Debug\net6.0-windows\Lab_11.dll
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Lab_11\Lab_11\obj\Debug\net6.0-windows\refint\Lab_11.dll
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Lab_11\Lab_11\obj\Debug\net6.0-windows\Lab_11.pdb
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Lab_11\Lab_11\obj\Debug\net6.0-windows\Lab_11.genruntimeconfig.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Lab_11\Lab_11\obj\Debug\net6.0-windows\ref\Lab_11.dll
