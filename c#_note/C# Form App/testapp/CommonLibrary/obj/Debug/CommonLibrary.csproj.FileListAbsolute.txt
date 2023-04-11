@@ -1,0 +1,4 @@
+D:\testapp\CommonLibrary\bin\Debug\CommonLibrary.dll
+D:\testapp\CommonLibrary\bin\Debug\CommonLibrary.pdb
+D:\testapp\CommonLibrary\obj\Debug\CommonLibrary.dll
+D:\testapp\CommonLibrary\obj\Debug\CommonLibrary.pdb
