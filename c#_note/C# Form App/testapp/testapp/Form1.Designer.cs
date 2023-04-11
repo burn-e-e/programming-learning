@@ -83,6 +83,7 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(667, 156);
             this.dataGridView1.TabIndex = 5;
@@ -93,6 +94,7 @@
             this.IDColumn.DataPropertyName = "ID";
             this.IDColumn.FillWeight = 76.14214F;
             this.IDColumn.HeaderText = "№";
+            this.IDColumn.MinimumWidth = 6;
             this.IDColumn.Name = "IDColumn";
             this.IDColumn.ReadOnly = true;
             // 
@@ -101,6 +103,7 @@
             this.UserTypeNameColumn.DataPropertyName = "UserTypeName";
             this.UserTypeNameColumn.FillWeight = 105.9645F;
             this.UserTypeNameColumn.HeaderText = "хэрэглэгчийн төрөл";
+            this.UserTypeNameColumn.MinimumWidth = 6;
             this.UserTypeNameColumn.Name = "UserTypeNameColumn";
             this.UserTypeNameColumn.ReadOnly = true;
             // 
@@ -109,6 +112,7 @@
             this.UserTypeInfoColumn.DataPropertyName = "UserTypeInfo";
             this.UserTypeInfoColumn.FillWeight = 105.9645F;
             this.UserTypeInfoColumn.HeaderText = "нэмэлт мэдээлэл";
+            this.UserTypeInfoColumn.MinimumWidth = 6;
             this.UserTypeInfoColumn.Name = "UserTypeInfoColumn";
             this.UserTypeInfoColumn.ReadOnly = true;
             // 
@@ -117,6 +121,7 @@
             this.CreatedDateColumn.DataPropertyName = "CreatedDate";
             this.CreatedDateColumn.FillWeight = 105.9645F;
             this.CreatedDateColumn.HeaderText = "үүсгэгдсэн/огноо";
+            this.CreatedDateColumn.MinimumWidth = 6;
             this.CreatedDateColumn.Name = "CreatedDateColumn";
             this.CreatedDateColumn.ReadOnly = true;
             // 
@@ -125,6 +130,7 @@
             this.ModifiedDateColumn.DataPropertyName = "ModifiedDate";
             this.ModifiedDateColumn.FillWeight = 105.9645F;
             this.ModifiedDateColumn.HeaderText = "засварлагдсан/огн";
+            this.ModifiedDateColumn.MinimumWidth = 6;
             this.ModifiedDateColumn.Name = "ModifiedDateColumn";
             this.ModifiedDateColumn.ReadOnly = true;
             // 
@@ -138,7 +144,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(117, 99);
+            this.groupBox2.Size = new System.Drawing.Size(120, 120);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "командууд";
@@ -146,7 +152,7 @@
             // button4
             // 
             this.button4.Enabled = false;
-            this.button4.Location = new System.Drawing.Point(12, 73);
+            this.button4.Location = new System.Drawing.Point(12, 76);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(94, 20);
@@ -158,7 +164,7 @@
             // button3
             // 
             this.button3.Enabled = false;
-            this.button3.Location = new System.Drawing.Point(12, 54);
+            this.button3.Location = new System.Drawing.Point(12, 56);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(94, 20);
@@ -169,7 +175,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 35);
+            this.button2.Location = new System.Drawing.Point(12, 36);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 20);
@@ -203,7 +209,7 @@
             this.label2.Location = new System.Drawing.Point(41, 44);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 13);
+            this.label2.Size = new System.Drawing.Size(134, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "нэмэлт мэдээлэл";
             // 
@@ -212,7 +218,7 @@
             this.textBox1.Location = new System.Drawing.Point(159, 26);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 20);
+            this.textBox1.Size = new System.Drawing.Size(182, 23);
             this.textBox1.TabIndex = 1;
             // 
             // label1
@@ -221,13 +227,13 @@
             this.label1.Location = new System.Drawing.Point(114, 28);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.Size = new System.Drawing.Size(52, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "төрөл";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(703, 340);
