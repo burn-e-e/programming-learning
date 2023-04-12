@@ -1,7 +1,7 @@
 package Lecture_11;
 import java.util.Scanner;
 
-public class Program {
+public class Give_value_to_Array {
      public static void main(String[] args) {
           Scanner sc = new Scanner(System.in);
           int size;
