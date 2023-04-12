@@ -7,13 +7,24 @@ public class Book {
       private String datePrinted;
       protected static int sumOfAllBooks;
       protected static int averagePriceOfBooks;
-
-      public Book(String bookName, String bookAuthor, int bookPrice, String datePrinted) {
+      void setBookName(String bookName){
             this.bookName = bookName;
+      }
+      void setBookAuthor(String bookAuthor){
             this.bookAuthor = bookAuthor;
+      }
+      void setBookPrice(int bookPrice){
             this.bookPrice = bookPrice;
+      }
+      void setDatePrinted(String datePrinted){
             this.datePrinted = datePrinted;
       }
+      // public Book(String bookName, String bookAuthor, int bookPrice, String datePrinted) {
+      //       this.bookName = bookName;
+      //       this.bookAuthor = bookAuthor;
+      //       this.bookPrice = bookPrice;
+      //       this.datePrinted = datePrinted;
+      // }
 
       public Book(Book book) {
             this.bookName = book.bookName;
