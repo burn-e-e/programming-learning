@@ -19,13 +19,16 @@ class Person {
      void setGender(char gender) {
           this.gender = gender;
      }
-     String getName(){
+
+     String getName() {
           return name;
      }
-     int getAge(){
+
+     int getAge() {
           return age;
      }
-     char getChar(){
+
+     char getChar() {
           return gender;
      }
 }
@@ -36,12 +39,17 @@ public class Class_Array {
           Person[] person;
           int size;
           System.out.print("Enter how many person to create: ");
-          size = sc.nextInt();
+          try {
+               size = sc.nextInt();
+          } catch (InputMismatchException e) {
+               System.out.println("Enter Integer");
+               return;
+          }
           person = new Person[size];
           String name, insStr;
           int age;
           char gender;
-          
+
           for (int i = 0; i < person.length; i++) {
                person[i] = new Person();
                System.out.print("Enter name ");
@@ -62,9 +70,28 @@ public class Class_Array {
                person[i].setGender(gender);
 
           }
-          
           for (Person p : person) {
-               System.out.println("Name: "+ p.getName()+" Age: "+p.getAge()+" Gender: "+p.getChar());
+               System.out.println("Name: " + p.getName() + " Age: " + p.getAge() + " Gender: " + p.getChar());
+          }
+          System.out.println("If you want to find oldest man and youngest man - (1)");
+          int option = sc.nextInt();
+          switch (option) {
+               case 1:
+                    int minIdx = 0;
+                    int maxIdx = 0;
+                    for (int i = 0; i < person.length; i++) {
+                         if (person[i].getAge() < person[minIdx].getAge()) {
+                              minIdx = i;
+                         } else if (person[i].getAge() > person[maxIdx].getAge()) {
+                              maxIdx = i;
+                         }
+                    }
+                    System.out.println("Oldest person is " + person[maxIdx].getName() + " " + person[maxIdx].getAge());
+                    System.out.println(
+                              "Youngest person is " + person[minIdx].getName() + " " + person[minIdx].getAge());
+                    break;
+               default:
+                    break;
           }
           sc.close();
      }
