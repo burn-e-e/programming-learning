@@ -1,6 +1,5 @@
 package Lab_11;
 class Ex extends Exception{
-
      Ex(String msg){
           super(msg);
      }
@@ -35,7 +34,6 @@ public class Test {
           }
           if (Character.isDigit(c.charAt(4)) && Character.isDigit(c.charAt(5)) && Character.isDigit(c.charAt(7))
                     && Character.isDigit(c.charAt(8)) && Character.isDigit(c.charAt(9))) {
-
           } else {
                throw new NumberFormatException("Too baih ystoi");
           }

@@ -8,13 +8,6 @@ public class Book {
       protected static int sumOfAllBooks;
       protected static int averagePriceOfBooks;
 
-      public Book() {
-            this.bookName = "";
-            this.bookAuthor = "";
-            this.bookPrice = 0;
-            this.datePrinted = "";
-      }
-
       public Book(String bookName, String bookAuthor, int bookPrice, String datePrinted) {
             this.bookName = bookName;
             this.bookAuthor = bookAuthor;

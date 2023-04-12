@@ -1,6 +1,9 @@
 package bd3.FirstOne;
 
 public class BookDemo extends Book{
+     public BookDemo(Book book) {
+          super(book);
+     }
      public static void main(String[] args) {
           Book book1 = new Book("The Lord of the Rings", "J.R.R. Tolkien", 1954, "September 21");
           Book book2 = new Book("The Hitchhiker's Guide to the Galaxy", "Douglas Adams", 1979, "October 12");
