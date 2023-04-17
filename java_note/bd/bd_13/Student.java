@@ -5,12 +5,15 @@ public class Student {
      private int studentAge;
      private int studentGpa;
      private String studentCode;
-
+     private Teacher teacher;
      Student(String studentName, int studentAge, int studentGpa, String studentCode) {
           this.studentName = studentName;
           this.studentAge = studentAge;
           this.studentGpa = studentGpa;
           this.studentCode = studentCode;
+     }
+     void setTeacher(Teacher teacher){
+          this.teacher = teacher;
      }
      void setName(String name){
           this.studentName = name;
@@ -32,6 +35,7 @@ public class Student {
 
      void nameLength() {
           System.out.println(studentName.length());
+          teacher.display();
      }
 
      void lastDigit() {
