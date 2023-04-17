@@ -1,4 +1,4 @@
-package Lecture_9;
+package Lecture9;
 abstract class A{
      int a;
      void meth(){
