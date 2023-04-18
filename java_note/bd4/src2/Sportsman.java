@@ -18,8 +18,8 @@ public class Sportsman extends Person {
     void changeField(double weight){
         this.weight = weight;
     }
-    void display() {
-        System.out.println("Weight: "+weight);
-        System.out.println("Age: "+ );
-    }
+    // void display() {
+    //     System.out.println("Weight: "+weight);
+    //     System.out.println("Age: "+ );
+    // }
 }
