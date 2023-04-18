@@ -1,0 +1,16 @@
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Exam\Exam\bin\Debug\Exam.exe.config
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Exam\Exam\bin\Debug\Exam.exe
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Exam\Exam\bin\Debug\Exam.pdb
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Exam\Exam\obj\Debug\Exam.csproj.AssemblyReference.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Exam\Exam\obj\Debug\Exam.csproj.SuggestedBindingRedirects.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Exam\Exam\obj\Debug\Exam.Form1.resources
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Exam\Exam\obj\Debug\Exam.Properties.Resources.resources
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Exam\Exam\obj\Debug\Exam.csproj.GenerateResource.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Exam\Exam\obj\Debug\Exam.csproj.CoreCompileInputs.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Exam\Exam\obj\Debug\Exam.exe
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Exam\Exam\obj\Debug\Exam.pdb
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Exam\Exam\bin\Debug\EntityFramework.dll
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Exam\Exam\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Exam\Exam\bin\Debug\EntityFramework.xml
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Exam\Exam\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Form App\Exam\Exam\obj\Debug\Exam.csproj.CopyComplete

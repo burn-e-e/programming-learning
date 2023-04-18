@@ -36,18 +36,9 @@
             PnlHistory = new Panel();
             richTextBox1 = new RichTextBox();
             BtnClearHistory = new Button();
-            panel1 = new Panel();
-            BtnMenu = new Button();
-            BtnHistory = new Button();
             TxtDisplay2 = new TextBox();
             TxtDisplay1 = new TextBox();
-            button3 = new Button();
             BtnBackSpace = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
             BtnPercent = new Button();
             BtnCE = new Button();
             BtnC = new Button();
@@ -71,6 +62,15 @@
             Btn0 = new Button();
             Btn3 = new Button();
             BtnDecimal = new Button();
+            panel1 = new Panel();
+            BtnMenu = new Button();
+            BtnHistory = new Button();
+            button3 = new Button();
+            button5 = new Button();
+            button6 = new Button();
+            button7 = new Button();
+            button8 = new Button();
+            button9 = new Button();
             PnlTitle.SuspendLayout();
             PnlHistory.SuspendLayout();
             panel1.SuspendLayout();
@@ -169,45 +169,6 @@
             BtnClearHistory.TabIndex = 6;
             BtnClearHistory.UseVisualStyleBackColor = true;
             // 
-            // panel1
-            // 
-            panel1.Controls.Add(BtnMenu);
-            panel1.Controls.Add(BtnHistory);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 40);
-            panel1.Margin = new Padding(0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(350, 40);
-            panel1.TabIndex = 2;
-            // 
-            // BtnMenu
-            // 
-            BtnMenu.Dock = DockStyle.Left;
-            BtnMenu.FlatAppearance.BorderSize = 0;
-            BtnMenu.FlatAppearance.MouseOverBackColor = Color.FromArgb(192, 0, 0);
-            BtnMenu.FlatStyle = FlatStyle.Flat;
-            BtnMenu.Image = (Image)resources.GetObject("BtnMenu.Image");
-            BtnMenu.Location = new Point(0, 0);
-            BtnMenu.Margin = new Padding(0);
-            BtnMenu.Name = "BtnMenu";
-            BtnMenu.Size = new Size(50, 40);
-            BtnMenu.TabIndex = 4;
-            BtnMenu.UseVisualStyleBackColor = true;
-            // 
-            // BtnHistory
-            // 
-            BtnHistory.Dock = DockStyle.Right;
-            BtnHistory.FlatAppearance.BorderSize = 0;
-            BtnHistory.FlatAppearance.MouseOverBackColor = Color.FromArgb(192, 0, 0);
-            BtnHistory.FlatStyle = FlatStyle.Flat;
-            BtnHistory.Image = (Image)resources.GetObject("BtnHistory.Image");
-            BtnHistory.Location = new Point(300, 0);
-            BtnHistory.Margin = new Padding(0);
-            BtnHistory.Name = "BtnHistory";
-            BtnHistory.Size = new Size(50, 40);
-            BtnHistory.TabIndex = 2;
-            BtnHistory.UseVisualStyleBackColor = true;
-            // 
             // TxtDisplay2
             // 
             TxtDisplay2.BackColor = Color.FromArgb(82, 82, 82);
@@ -241,21 +202,6 @@
             TxtDisplay1.TextAlign = HorizontalAlignment.Right;
             TxtDisplay1.TextChanged += TxtDisplay1_TextChanged;
             // 
-            // button3
-            // 
-            button3.BackgroundImageLayout = ImageLayout.Center;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Gadugi", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.ForeColor = Color.Transparent;
-            button3.Location = new Point(295, 187);
-            button3.Margin = new Padding(0);
-            button3.Name = "button3";
-            button3.Size = new Size(50, 30);
-            button3.TabIndex = 5;
-            button3.Text = "M~";
-            button3.UseVisualStyleBackColor = true;
-            // 
             // BtnBackSpace
             // 
             BtnBackSpace.BackColor = Color.FromArgb(60, 60, 60);
@@ -272,81 +218,6 @@
             BtnBackSpace.TabIndex = 5;
             BtnBackSpace.UseVisualStyleBackColor = false;
             BtnBackSpace.Click += button4_Click;
-            // 
-            // button5
-            // 
-            button5.BackgroundImageLayout = ImageLayout.Center;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Gadugi", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            button5.ForeColor = Color.Transparent;
-            button5.Location = new Point(238, 187);
-            button5.Margin = new Padding(0);
-            button5.Name = "button5";
-            button5.Size = new Size(50, 30);
-            button5.TabIndex = 5;
-            button5.Text = "MS";
-            button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            button6.BackgroundImageLayout = ImageLayout.Center;
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Gadugi", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            button6.ForeColor = Color.Transparent;
-            button6.Location = new Point(181, 187);
-            button6.Margin = new Padding(0);
-            button6.Name = "button6";
-            button6.Size = new Size(50, 30);
-            button6.TabIndex = 5;
-            button6.Text = "M-";
-            button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            button7.BackgroundImageLayout = ImageLayout.Center;
-            button7.FlatAppearance.BorderSize = 0;
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.Font = new Font("Gadugi", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            button7.ForeColor = Color.Transparent;
-            button7.Location = new Point(124, 187);
-            button7.Margin = new Padding(0);
-            button7.Name = "button7";
-            button7.Size = new Size(50, 30);
-            button7.TabIndex = 5;
-            button7.Text = "M+";
-            button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            button8.BackgroundImageLayout = ImageLayout.Center;
-            button8.FlatAppearance.BorderSize = 0;
-            button8.FlatStyle = FlatStyle.Flat;
-            button8.Font = new Font("Gadugi", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            button8.ForeColor = Color.Transparent;
-            button8.Location = new Point(67, 187);
-            button8.Margin = new Padding(0);
-            button8.Name = "button8";
-            button8.Size = new Size(50, 30);
-            button8.TabIndex = 5;
-            button8.Text = "MR";
-            button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            button9.BackgroundImageLayout = ImageLayout.Center;
-            button9.FlatAppearance.BorderSize = 0;
-            button9.FlatStyle = FlatStyle.Flat;
-            button9.Font = new Font("Gadugi", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            button9.ForeColor = Color.Transparent;
-            button9.Location = new Point(10, 187);
-            button9.Margin = new Padding(0);
-            button9.Name = "button9";
-            button9.Size = new Size(50, 30);
-            button9.TabIndex = 5;
-            button9.Text = "MC";
-            button9.UseVisualStyleBackColor = true;
             // 
             // BtnPercent
             // 
@@ -397,7 +268,7 @@
             BtnC.TabIndex = 5;
             BtnC.Text = "C";
             BtnC.UseVisualStyleBackColor = false;
-            BtnC.Click += button4_Click;
+            BtnC.Click += BtnC_Click;
             // 
             // BtnDivision
             // 
@@ -618,7 +489,7 @@
             BtnAdd.TabIndex = 5;
             BtnAdd.Text = "+";
             BtnAdd.UseVisualStyleBackColor = false;
-            BtnAdd.Click += button4_Click;
+            BtnAdd.Click += BtnAdd_Click;
             // 
             // Btn1
             // 
@@ -739,6 +610,135 @@
             BtnDecimal.UseVisualStyleBackColor = false;
             BtnDecimal.Click += BtnNum_Click;
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(BtnMenu);
+            panel1.Controls.Add(BtnHistory);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 40);
+            panel1.Margin = new Padding(0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(350, 40);
+            panel1.TabIndex = 2;
+            // 
+            // BtnMenu
+            // 
+            BtnMenu.Dock = DockStyle.Left;
+            BtnMenu.FlatAppearance.BorderSize = 0;
+            BtnMenu.FlatAppearance.MouseOverBackColor = Color.FromArgb(192, 0, 0);
+            BtnMenu.FlatStyle = FlatStyle.Flat;
+            BtnMenu.Image = (Image)resources.GetObject("BtnMenu.Image");
+            BtnMenu.Location = new Point(0, 0);
+            BtnMenu.Margin = new Padding(0);
+            BtnMenu.Name = "BtnMenu";
+            BtnMenu.Size = new Size(50, 40);
+            BtnMenu.TabIndex = 4;
+            BtnMenu.UseVisualStyleBackColor = true;
+            // 
+            // BtnHistory
+            // 
+            BtnHistory.Dock = DockStyle.Right;
+            BtnHistory.FlatAppearance.BorderSize = 0;
+            BtnHistory.FlatAppearance.MouseOverBackColor = Color.FromArgb(192, 0, 0);
+            BtnHistory.FlatStyle = FlatStyle.Flat;
+            BtnHistory.Image = (Image)resources.GetObject("BtnHistory.Image");
+            BtnHistory.Location = new Point(300, 0);
+            BtnHistory.Margin = new Padding(0);
+            BtnHistory.Name = "BtnHistory";
+            BtnHistory.Size = new Size(50, 40);
+            BtnHistory.TabIndex = 2;
+            BtnHistory.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.BackgroundImageLayout = ImageLayout.Center;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Gadugi", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.ForeColor = Color.Transparent;
+            button3.Location = new Point(295, 187);
+            button3.Margin = new Padding(0);
+            button3.Name = "button3";
+            button3.Size = new Size(50, 30);
+            button3.TabIndex = 5;
+            button3.Text = "M~";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            button5.BackgroundImageLayout = ImageLayout.Center;
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Font = new Font("Gadugi", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            button5.ForeColor = Color.Transparent;
+            button5.Location = new Point(238, 187);
+            button5.Margin = new Padding(0);
+            button5.Name = "button5";
+            button5.Size = new Size(50, 30);
+            button5.TabIndex = 5;
+            button5.Text = "MS";
+            button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            button6.BackgroundImageLayout = ImageLayout.Center;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Gadugi", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            button6.ForeColor = Color.Transparent;
+            button6.Location = new Point(181, 187);
+            button6.Margin = new Padding(0);
+            button6.Name = "button6";
+            button6.Size = new Size(50, 30);
+            button6.TabIndex = 5;
+            button6.Text = "M-";
+            button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            button7.BackgroundImageLayout = ImageLayout.Center;
+            button7.FlatAppearance.BorderSize = 0;
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Font = new Font("Gadugi", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            button7.ForeColor = Color.Transparent;
+            button7.Location = new Point(124, 187);
+            button7.Margin = new Padding(0);
+            button7.Name = "button7";
+            button7.Size = new Size(50, 30);
+            button7.TabIndex = 5;
+            button7.Text = "M+";
+            button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            button8.BackgroundImageLayout = ImageLayout.Center;
+            button8.FlatAppearance.BorderSize = 0;
+            button8.FlatStyle = FlatStyle.Flat;
+            button8.Font = new Font("Gadugi", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            button8.ForeColor = Color.Transparent;
+            button8.Location = new Point(67, 187);
+            button8.Margin = new Padding(0);
+            button8.Name = "button8";
+            button8.Size = new Size(50, 30);
+            button8.TabIndex = 5;
+            button8.Text = "MR";
+            button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            button9.BackgroundImageLayout = ImageLayout.Center;
+            button9.FlatAppearance.BorderSize = 0;
+            button9.FlatStyle = FlatStyle.Flat;
+            button9.Font = new Font("Gadugi", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            button9.ForeColor = Color.Transparent;
+            button9.Location = new Point(10, 187);
+            button9.Margin = new Padding(0);
+            button9.Name = "button9";
+            button9.Size = new Size(50, 30);
+            button9.TabIndex = 5;
+            button9.Text = "MC";
+            button9.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -800,20 +800,11 @@
         private Panel PnlHistory;
         private Button button2;
         private Button button1;
-        private Panel panel1;
-        private Button BtnMenu;
-        private Button BtnHistory;
         private TextBox TxtDisplay2;
         private TextBox TxtDisplay1;
         private RichTextBox richTextBox1;
         private Button BtnClearHistory;
-        private Button button3;
         private Button BtnBackSpace;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
         private Button BtnPercent;
         private Button BtnCE;
         private Button BtnC;
@@ -837,5 +828,14 @@
         private Button Btn0;
         private Button Btn3;
         private Button BtnDecimal;
+        private Panel panel1;
+        private Button BtnMenu;
+        private Button BtnHistory;
+        private Button button3;
+        private Button button5;
+        private Button button6;
+        private Button button7;
+        private Button button8;
+        private Button button9;
     }
 }

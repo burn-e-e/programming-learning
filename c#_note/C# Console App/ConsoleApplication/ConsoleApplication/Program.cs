@@ -5,5 +5,5 @@ Console.WriteLine("Enter a number: ");
 b = Convert.ToInt32(Console.ReadLine());
 c = a + b;
 Console.WriteLine("Answer is: " + c + " int.");
-c=(float)c;
+c = c;
 Console.WriteLine("Answer is: " + c + " double.");

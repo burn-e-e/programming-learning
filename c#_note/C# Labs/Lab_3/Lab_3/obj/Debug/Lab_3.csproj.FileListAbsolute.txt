@@ -1,0 +1,11 @@
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Labs\Lab_3\Lab_3\bin\Debug\Lab_3.exe.config
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Labs\Lab_3\Lab_3\bin\Debug\Lab_3.exe
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Labs\Lab_3\Lab_3\bin\Debug\Lab_3.pdb
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Labs\Lab_3\Lab_3\obj\Debug\Lab_3.csproj.AssemblyReference.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Labs\Lab_3\Lab_3\obj\Debug\Lab_3.csproj.SuggestedBindingRedirects.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Labs\Lab_3\Lab_3\obj\Debug\Lab_3.Properties.Resources.resources
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Labs\Lab_3\Lab_3\obj\Debug\Lab_3.csproj.GenerateResource.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Labs\Lab_3\Lab_3\obj\Debug\Lab_3.csproj.CoreCompileInputs.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Labs\Lab_3\Lab_3\obj\Debug\Lab_3.exe
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Labs\Lab_3\Lab_3\obj\Debug\Lab_3.pdb
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Labs\Lab_3\Lab_3\obj\Debug\Lab_3.Form1.resources
