@@ -46,10 +46,13 @@ public class Example {
           }
           System.out.println("Sum is " + sum);
           // Example 2
+
+          
           Person[] people = new Person[2];
           // people[0].setName("Burnee");
           // people[1].setName("Bat");
           for (int i = 0; i < people.length; i++) {
+               people[i] = new Person();
                System.out.println("Enter " + (i + 1) + " name");
                people[i].setName(sc.next());
           }
