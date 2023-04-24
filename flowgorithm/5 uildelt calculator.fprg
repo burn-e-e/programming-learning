@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="4burn"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-21 03:35:25 PM"/>
+        <attribute name="created" value="NGJ1cm47REVTS1RPUC1LUjFKVFZBOzIwMjMtMDQtMjE7MDM6MDQ6MzkgUE07Mjg2Ng=="/>
+        <attribute name="edited" value="NGJ1cm47REVTS1RPUC1LUjFKVFZBOzIwMjMtMDQtMjE7MDM6MzU6MjUgUE07MTsyOTcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <declare name="hariu" type="Integer" array="False" size=""/>
+            <declare name="action" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ehnii toog oruul&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Daraagiin toog oruul&quot;" newline="True"/>
+            <input variable="num2"/>
+            <output expression="&quot;Nmehe bol 1, Hasah bol 2, Urjih bol, 3, Huvaah bol 4, Root bol 5&quot;" newline="True"/>
+            <input variable="action"/>
+            <if expression="action == 1">
+                <then>
+                    <call expression="Nemeh(num1, num2)"/>
+                </then>
+                <else>
+                    <if expression="action == 2">
+                        <then>
+                            <call expression="Hasah(num1, num2)"/>
+                        </then>
+                        <else>
+                            <if expression="action == 3">
+                                <then>
+                                    <call expression="huvaah(num1, num2)"/>
+                                </then>
+                                <else>
+                                    <if expression="action == 4">
+                                        <then>
+                                            <call expression="urjih(num1, num2)"/>
+                                        </then>
+                                        <else>
+                                            <if expression="action == 5">
+                                                <then>
+                                                    <call expression="root(num1)"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Buruu too oruulsan baina&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="root" type="Integer" variable="hariu">
+        <parameters>
+            <parameter name="num1" type="Integer" array="False"/>
+            <parameter name="num2" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="hariu" type="Integer" array="False" size=""/>
+            <assign variable="hariu" expression="sqrt(num1)"/>
+            <output expression="hariu" newline="True"/>
+        </body>
+    </function>
+    <function name="Hasah" type="Integer" variable="hariu">
+        <parameters>
+            <parameter name="num1" type="Integer" array="False"/>
+            <parameter name="num2" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="hariu" type="Integer" array="False" size=""/>
+            <assign variable="hariu" expression="num1-num2"/>
+            <output expression="hariu" newline="True"/>
+        </body>
+    </function>
+    <function name="huvaah" type="Integer" variable="hariu">
+        <parameters>
+            <parameter name="num1" type="Integer" array="False"/>
+            <parameter name="num2" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="hariu" type="Integer" array="False" size=""/>
+            <assign variable="hariu" expression="num1/num2"/>
+            <output expression="hariu" newline="True"/>
+        </body>
+    </function>
+    <function name="Nemeh" type="Integer" variable="hariu">
+        <parameters>
+            <parameter name="num1" type="Integer" array="False"/>
+            <parameter name="num2" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="hariu" type="Integer" array="False" size=""/>
+            <assign variable="hariu" expression="num1+num2"/>
+            <output expression="hariu" newline="True"/>
+        </body>
+    </function>
+    <function name="urjih" type="Integer" variable="hariu">
+        <parameters>
+            <parameter name="num1" type="Integer" array="False"/>
+            <parameter name="num2" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="hariu" type="Integer" array="False" size=""/>
+            <assign variable="hariu" expression="num1*num2"/>
+            <output expression="hariu" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
