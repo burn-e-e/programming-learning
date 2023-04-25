@@ -21,10 +21,10 @@ namespace EmployeeManagement.Classes
         public string Gender { get; set; }
 
         static string myconnectionstring = ConfigurationManager.ConnectionStrings["connectionstring"].ConnectionString;
-        //дата баазаас утга авах
+        //дата баазаас ДАТА сонгох
         public DataTable Select()
         {
-            //1. Дата бааз холболт
+            //1. Дата баазын холболт
             SqlConnection conn = new SqlConnection(myconnectionstring);
             DataTable dt = new DataTable();
             try
@@ -57,7 +57,28 @@ namespace EmployeeManagement.Classes
             SqlConnection conn = new SqlConnection(myconnectionstring);
             try
             {
-
+                //2. Датаг оруулахын тулд SQL QUERY үүсгэх
+                string sql = "INSERT INTO tbl_management (FirstName, LastName, ContactNo, Address, Gender) VALUES(@FirstName, @LastName, @ContactNo, @Address, @Gender)";
+                //sql болон conn ашиглан cmd үүсгэж байна
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                //Датагаа нэмэхийн тулд parameter үүсгэж байна
+                cmd.Parameters.AddWithValue("@FirstName", c.FirstName);
+                cmd.Parameters.AddWithValue("@LastName", c.LastName);
+                cmd.Parameters.AddWithValue("@ContactNo", c.ContactNo);
+                cmd.Parameters.AddWithValue("@Address", c.Address);
+                cmd.Parameters.AddWithValue("@Gender", c.Gender);
+                //Холболтоо нээх
+                conn.Open() ;
+                int rows = cmd.ExecuteNonQuery();
+                //Query амжилттай уншсаны дараа мөрийн(row) утга 0 ээс их байна үгүй бол 0 байна
+                if (rows > 0)
+                {
+                    isSuccess = true;
+                }
+                else
+                {
+                    isSuccess=false;
+                }
             }
             catch (Exception e)
             {
@@ -65,7 +86,38 @@ namespace EmployeeManagement.Classes
             }
             finally
             {
-                conn.Close ();
+                conn.Close();
+            }
+            return isSuccess;
+        }
+        //Windows form оос ДАТА баазын утгыг өөрчлөх method()
+        public bool Update(contact c)
+        {
+            //default буцаах утга үүсэж утгын false болгож байна
+            bool isSuccess = false;
+            //1. Дата бааз холбох
+            SqlConnection conn = new SqlConnection(myconnectionstring);
+            try
+            {
+                //ДАТА баазаас датаг өөрчлөх SQL
+                string sql = "UPDATE tbl_management SET FirstName=@FirstName, LastName=@LastName, ContactNo=@ContactNo, Address=@Address, Gender=@Gender WHERE contactID=@contactID";
+                //sql болон conn ашиглан cmd үүсгэж байна
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                //Датагаа нэмэхийн тулд parameter үүсгэж байна
+                cmd.Parameters.AddWithValue("@FirstName", c.FirstName);
+                cmd.Parameters.AddWithValue("@LastName", c.LastName);
+                cmd.Parameters.AddWithValue("@ContactNo", c.ContactNo);
+                cmd.Parameters.AddWithValue("@Address", c.Address);
+                cmd.Parameters.AddWithValue("@Gender", c.Gender);
+                cmd.Parameters.AddWithValue("ContactID", c.contactID);
+            }
+            catch(Exception e)
+            {
+
+            }
+            finally
+            {
+
             }
             return isSuccess;
         }
