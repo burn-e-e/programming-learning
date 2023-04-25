@@ -76,6 +76,7 @@
             txtboxContactID.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtboxContactID.Location = new Point(167, 108);
             txtboxContactID.Name = "txtboxContactID";
+            txtboxContactID.ReadOnly = true;
             txtboxContactID.Size = new Size(204, 34);
             txtboxContactID.TabIndex = 2;
             // 
@@ -180,6 +181,7 @@
             btnAdd.TabIndex = 4;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnUpdate
             // 
