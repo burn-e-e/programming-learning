@@ -13,7 +13,6 @@ namespace EmployeeManagement
         {
 
         }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             c.FirstName = textBox1.Text;

@@ -20,7 +20,7 @@ namespace EmployeeManagement.Classes
         public string Address { get; set; }
         public string Gender { get; set; }
 
-        static string myconnectionstring = ConfigurationManager.ConnectionStrings["connectionstring"].ConnectionString;
+        static string myconnectionstring = "Data Source=DESKTOP-KR1JTVA\\DS_MSSQLSERVER;Initial Catalog = Emanagement; Integrated Security = True; trustServerCertificate=true";
         //------------------------------------------------------------------------дата баазаас ДАТА сонгох
         public DataTable Select()
         {
@@ -55,10 +55,11 @@ namespace EmployeeManagement.Classes
             bool isSuccess = false;
             //1. Дата бааз холбох
             SqlConnection conn = new SqlConnection(myconnectionstring);
-            try
-            {
+            conn.Open();
+            //try
+            //{
                 //2. Датаг оруулахын тулд SQL QUERY үүсгэх
-                string sql = "INSERT INTO tbl_management (FirstName, LastName, ContactNo, Address, Gender) VALUES (@FirstName, @LastName, @CaontactNo, @Address, @Gender)";
+                string sql = "INSERT INTO tbl_management (FirstName, LastName, ContactNo,Address, Gender) VALUES (@FirstName, @LastName, @ContactNo,@Address, @Gender)";
                 //sql болон conn ашиглан cmd үүсгэж байна
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 //Датагаа нэмэхийн тулд parameter үүсгэж байна
@@ -67,8 +68,9 @@ namespace EmployeeManagement.Classes
                 cmd.Parameters.AddWithValue("@ContactNo", c.ContactNo);
                 cmd.Parameters.AddWithValue("@Address", c.Address);
                 cmd.Parameters.AddWithValue("@Gender", c.Gender);
+                Console.Write(cmd.CommandText);
                 //Холболтоо нээх
-                conn.Open() ;
+                //conn.Open() ;
                 int rows = cmd.ExecuteNonQuery();
                 //Query амжилттай уншсаны дараа мөрийн(row) утга 0 ээс их байна үгүй бол 0 байна
                 if (rows > 0)
@@ -79,15 +81,15 @@ namespace EmployeeManagement.Classes
                 {
                     isSuccess=false;
                 }
-            }
+           /* }
             catch (Exception e)
             {
-
+                Console.WriteLine(e.Message);
             }
             finally
             {
                 conn.Close();
-            }
+            }*/
             return isSuccess;
         }
         //-----------------------------------------------Windows form оос ДАТА баазын утгыг өөрчлөх method()
