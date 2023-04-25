@@ -1,4 +1,4 @@
-package bd4.src2;
+package bd4.First;
 
 public class Sportsman extends Person {
     private double weight;
@@ -11,15 +11,8 @@ public class Sportsman extends Person {
         this.height = height;
     }
 
-    @Override
     void display() {
+        super.display();
         System.out.println("Sport name" + nameS + "Height: " + height + " Weight: " + weight);
     }
-    void changeField(double weight){
-        this.weight = weight;
-    }
-    // void display() {
-    //     System.out.println("Weight: "+weight);
-    //     System.out.println("Age: "+ );
-    // }
 }

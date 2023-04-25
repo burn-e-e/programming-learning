@@ -1,4 +1,4 @@
-package bd4.src2;
+package bd4.First;
 public class Main {
     public static void main(String[] args) {
         Person[] persons = new Person[4];

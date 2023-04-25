@@ -1,4 +1,4 @@
-package bd4.src2;
+package bd4.Second;
 public class Teacher extends Person{
     private String teacher_rank;
     private int teacher_salary;
@@ -7,8 +7,8 @@ public class Teacher extends Person{
         this.teacher_rank = teacher_rank;
         this.teacher_salary=teacher_salary;
     }
-    @Override
     void display(){
+        super.display();
         System.out.println("Teacher rank: "+teacher_rank+" Teacher salary "+teacher_salary);
     }
 }

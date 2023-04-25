@@ -1,3 +1,4 @@
+package bd4.First;
 public class TennisPlayer extends Sportsman{
     private String player_team;
     private String player_rank;
@@ -6,8 +7,8 @@ public class TennisPlayer extends Sportsman{
         player_team = p_team;
         player_rank = p_rank;
     }
-    @Override
     void display(){
+        super.display();
         System.out.println("Player team: "+player_team+" Player rank: "+player_rank);
     }
 }

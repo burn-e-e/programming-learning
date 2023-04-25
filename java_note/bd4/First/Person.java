@@ -1,3 +1,4 @@
+package bd4.First;
 public class Person {
     private String name;
     private int age;
@@ -6,6 +7,7 @@ public class Person {
         this.age = age;
     }
     void display(){
+        
         System.out.println("Name: "+ name+ " Age: "+age);
     }
 }
