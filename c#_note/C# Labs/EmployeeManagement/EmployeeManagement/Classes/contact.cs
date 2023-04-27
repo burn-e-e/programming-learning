@@ -56,8 +56,8 @@ namespace EmployeeManagement.Classes
             //1. Дата бааз холбох
             SqlConnection conn = new SqlConnection(myconnectionstring);
             conn.Open();
-            //try
-            //{
+            try
+            {
                 //2. Датаг оруулахын тулд SQL QUERY үүсгэх
                 string sql = "INSERT INTO tbl_management (FirstName, LastName, ContactNo,Address, Gender) VALUES (@FirstName, @LastName, @ContactNo,@Address, @Gender)";
                 //sql болон conn ашиглан cmd үүсгэж байна
@@ -81,7 +81,7 @@ namespace EmployeeManagement.Classes
                 {
                     isSuccess=false;
                 }
-           /* }
+           }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
@@ -89,7 +89,7 @@ namespace EmployeeManagement.Classes
             finally
             {
                 conn.Close();
-            }*/
+            }
             return isSuccess;
         }
         //-----------------------------------------------Windows form оос ДАТА баазын утгыг өөрчлөх method()
