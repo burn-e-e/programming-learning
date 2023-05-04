@@ -1,0 +1,15 @@
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Thread\Thread\bin\Debug\net6.0\Thread.exe
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Thread\Thread\bin\Debug\net6.0\Thread.deps.json
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Thread\Thread\bin\Debug\net6.0\Thread.runtimeconfig.json
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Thread\Thread\bin\Debug\net6.0\Thread.dll
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Thread\Thread\bin\Debug\net6.0\Thread.pdb
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Thread\Thread\obj\Debug\net6.0\Thread.csproj.AssemblyReference.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Thread\Thread\obj\Debug\net6.0\Thread.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Thread\Thread\obj\Debug\net6.0\Thread.AssemblyInfoInputs.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Thread\Thread\obj\Debug\net6.0\Thread.AssemblyInfo.cs
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Thread\Thread\obj\Debug\net6.0\Thread.csproj.CoreCompileInputs.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Thread\Thread\obj\Debug\net6.0\Thread.dll
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Thread\Thread\obj\Debug\net6.0\refint\Thread.dll
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Thread\Thread\obj\Debug\net6.0\Thread.pdb
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Thread\Thread\obj\Debug\net6.0\Thread.genruntimeconfig.cache
+C:\Users\4burn\Documents\GitHub\programming-learning\c#_note\C# Console App\Thread\Thread\obj\Debug\net6.0\ref\Thread.dll
