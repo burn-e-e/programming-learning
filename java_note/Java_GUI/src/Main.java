@@ -3,6 +3,7 @@ import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
+        /*
         int size = 420;
         JFrame frame = new JFrame();
         frame.setTitle("Java GUI");
@@ -14,5 +15,8 @@ public class Main {
         ImageIcon icon = new ImageIcon("icon.png");
         frame.setIconImage(icon.getImage());
         frame.getContentPane().setBackground(Color.LIGHT_GRAY);
+
+         */
+        MyFrame myframe = new MyFrame();
     }
 }
