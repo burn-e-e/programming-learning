@@ -6,6 +6,6 @@ public class GUI {
           JFrame frame = new JFrame();//create a frame
           frame.setSize(size, size);//sets the x-dimension, and y-dimension of frame
           
-          frame.setVisible(true); //make frame visible
+          frame.setVisible(true); 
      }
 }
