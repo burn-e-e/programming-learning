@@ -1,5 +1,4 @@
 package Lab_3;
-
 class Student {
      String name;
      int age;
@@ -10,7 +9,6 @@ class Student {
           age = a;
           gpa = g;
      }
-
      void setName(String p) {
           name = p;
      }
