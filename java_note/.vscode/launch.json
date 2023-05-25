@@ -6,6 +6,13 @@
      "configurations": [
           {
                "type": "java",
+               "name": "Main",
+               "request": "launch",
+               "mainClass": "FileIOS.Main",
+               "projectName": "java_note_421a147c"
+          },
+          {
+               "type": "java",
                "name": "Program",
                "request": "launch",
                "mainClass": "Lab_8.Program",
