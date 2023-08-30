@@ -1,28 +1,58 @@
 import java.util.Scanner;
+import java.lang.String;
 public class Exercise {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Hicheeliin toog oruul!");
         int hicheeliintoo = sc.nextInt();
-        double sum=0;
-        double[] hicheeliindunguud = new double[hicheeliintoo];
-        for (int i = 0;i < hicheeliintoo;i++){
-            System.out.println(i+1 + "-r hicheeliin dung oruul!");
-            hicheeliindunguud[i] = sc.nextDouble();
-            sum+=hicheeliindunguud[i];
+        String[] hicheel =  new String[hicheeliintoo];
+        int[] hicheeliin_credit = new int[hicheeliintoo];
+        double[] hicheeliin_dun= new double[hicheeliintoo];
+        for (int i = 0 ; i< hicheeliintoo; i++){
+            System.out.println(i+1+" hicheeliin ner bolon dun, credit oruulna uu");
+            hicheel[i] = sc.nextLine();
+            hicheeliin_dun[i] = sc.nextDouble();
+            hicheeliin_credit[i] = sc.nextInt();
         }
-        sum=sum/hicheeliintoo;
-        System.out.println(sum);
-        if (sum>95){
-            System.out.println("A+");
-        } else if (sum <= 95 && sum > 90) {
-            System.out.println("A-");
+        double[] point = new double[hicheeliintoo];
+        int[] hour = new int[hicheeliintoo];
+        for (int i = 0 ; i< hicheeliintoo; i++){
+            if (hicheeliin_dun[i]>95){
+               point[i]+=4;
+            } else if (hicheeliin_dun[i] <= 95 && hicheeliin_dun[i] > 90) {
+                point[i]+=3.75;
+            }
+            else if (hicheeliin_dun[i] <=90 && hicheeliin_dun[i] > 85) {
+                point[i]+=3.5;
+            }
+            else if (hicheeliin_dun[i] <=85 && hicheeliin_dun[i] > 80) {
+                point[i]+=3.25;
+            }
+            else if (hicheeliin_dun[i] <= 80 && hicheeliin_dun[i] > 75) {
+                point[i]+=3;
+            }
+            else if (hicheeliin_dun[i] <= 75 && hicheeliin_dun[i] > 70) {
+                point[i]+=2.75;
+            }
+            else if (hicheeliin_dun[i] <= 70 && hicheeliin_dun[i] > 65) {
+                point[i]+=2.5;
+            }
+            else if (hicheeliin_dun[i] <= 65 && hicheeliin_dun[i] > 60) {
+                point[i]+=2;
+            }
+            else {
+                point[i]+=0;
+            }
+
         }
-        else if (sum <=90 && sum > 85) {
-            System.out.println("B+");
-        }
-        else if (sum <=85 && sum > 80) {
-            System.out.println("B-");
+        for (int i = 0 ; i< hicheeliintoo; i++){
+            if(hicheeliin_credit[i]==3){
+                point[i]=point[i]*3;
+            }else if (hicheeliin_credit[i]==2){
+                point[i]=point[i]*2;
+            } else if (hicheeliin_credit[i]==1) {
+                point[i]=point[i]*3;
+            }
         }
     }
 }
