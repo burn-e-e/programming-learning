@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c7ff801b-e28a-4261-b8fa-7fe3dc919b00" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bd/bd_13/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/bd/bd_13/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bd/bd_13/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/bd/bd_13/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +36,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "C:/Users/4burn/Documents/Java",
+    "last_opened_file_path": "C:/Users/4burn/Documents/GitHub/programming-learning/Data structure and Algorithm",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,6 +58,8 @@
       <workItem from="1678528204387" duration="114000" />
       <workItem from="1681277392494" duration="55000" />
       <workItem from="1681703643488" duration="16000" />
+      <workItem from="1693807172451" duration="71000" />
+      <workItem from="1693807419974" duration="149000" />
     </task>
     <servers />
   </component>
