@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.lang.String;
-public class Exercise {
+public class Gpa {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Сайн байна уу? Та хичээлийн тоог оруулна уу");
@@ -17,8 +17,8 @@ public class Exercise {
             hicheel[i] = sc.next();
             System.out.println(hicheel[i]+" ийн кредитийг оруулна уу");
             hicheeliin_credit[i] = sc.nextInt();
-            while (hicheeliin_credit[i]>6){
-                System.out.println("Уучлаарай та хэтэрхий их тоо оруулсан байна");
+            while ((hicheeliin_credit[i]>6) || (hicheeliin_credit[i] < 0)){
+                System.out.println("Уучлаарай та 1 ээс 5 хүртэлх тоог оруулсан байна");
                 hicheeliin_credit[i]= sc.nextInt();
             }
             System.out.println(hicheeliin_credit[i]+" кредит "+hicheel[i]+" хичээлийн оноог оруулна уу");
@@ -32,7 +32,7 @@ public class Exercise {
         double[] point = new double[hicheeliintoo];
         for (int i = 0 ; i< hicheeliintoo; i++){
             if (hicheeliin_dun[i]>95){
-               point[i]+=4;
+                point[i]+=4;
             } else if (hicheeliin_dun[i] <= 95 && hicheeliin_dun[i] > 90) {
                 point[i]+=3.7;
             }
