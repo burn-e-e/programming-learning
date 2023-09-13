@@ -31,32 +31,48 @@ public class Lab2 {
         int a=1;
         while(a > 0){
             int c = sc.nextInt();
-            switch (c){
-                case 0:
-                    start();
-                    break;
-                case 1:
-                    int index;
+            int index;
+            switch (c) {
+                case 0 -> start();
+                case 1 -> {
                     int number;
                     System.out.println("Enter index: ");
                     index = sc.nextInt();
                     System.out.println("Enter number: ");
                     number = sc.nextInt();
-                    array.add(index,number);
+                    array.add(index, number);
                     enter(array);
-                    break;
-                case 2:
+                }
+                case 2 -> {
+                    System.out.println("Enter index: ");
+                    index = sc.nextInt();
+                    array.remove(index);
+                    enter(array);
+                }
+                case 3 -> {
+                    System.out.println("Min: "+min(array));
 
-                    break;
-                case 3:
-                    break;
-                case 4:
-                    break;
-                case 5:
-                    break;
-                case 6:
-                    break;
-                default:
+                }
+                case 4 -> {
+                    System.out.println("Max: "+max(array));
+                
+                }
+                case 5 -> {
+                    System.out.println("Sum: "+sum(array));
+
+                }
+                case 6 -> {
+                    System.out.println("Average: "+average(array));
+
+                }
+                case 7 -> {
+                    System.out.println("Remove Odd: "+removeOdd(array));
+                }
+                case 8 -> {
+                    System.out.println("Sort: "+sort(array));
+
+                }
+                default -> {
                     System.out.println("\n1 --> Add");
                     System.out.println("2 --> Remove");
                     System.out.println("3 --> Min");
@@ -66,6 +82,7 @@ public class Lab2 {
                     System.out.println("7 --> Remove Odd");
                     System.out.println("8 --> Sort");
                     System.out.println("0 --> Reenter list of number");
+                }
             }
         }
     }
