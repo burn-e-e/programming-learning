@@ -55,7 +55,7 @@ public class Lab2 {
                 }
                 case 4 -> {
                     System.out.println("Max: "+max(array));
-                
+
                 }
                 case 5 -> {
                     System.out.println("Sum: "+sum(array));

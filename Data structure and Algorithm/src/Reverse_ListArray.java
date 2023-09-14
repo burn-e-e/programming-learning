@@ -1,8 +1,7 @@
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Test {
+public class Reverse_ListArray {
     public static void main(String[] args) {
         List<Integer> array = new ArrayList<Integer>(10);
         array.add(4);
