@@ -112,19 +112,19 @@ public class Lab2 {
             array.add(sc.nextInt());
             n--;
         }
-        System.out.print("Your entered list of numbers are ");
+        System.out.print(yellow+ "ArrayList: "+reset);
         for (int element:array){
-            System.out.print("[ "+element+" ]");
+            System.out.print(yellow+"[ "+element+" ]"+reset);
         }
-        System.out.println("Add --> 1");
-        System.out.println("Remove --> 2");
-        System.out.println("Min --> 3");
-        System.out.println("Max --> 4");
-        System.out.println("Sum --> 5");
-        System.out.println("Average --> 6");
-        System.out.println("Remove Odd --> 7");
-        System.out.println("Sort --> 8");
-        System.out.println("Reenter list of numbers --> 0");
+        System.out.println("\n1 --> Add");
+        System.out.println("2 --> Remove");
+        System.out.println("3 --> Min");
+        System.out.println("4 --> Max");
+        System.out.println("5 --> Sum");
+        System.out.println("6 --> Average");
+        System.out.println("7 --> Remove Odd");
+        System.out.println("8 --> Sort");
+        System.out.println("0 --> Reenter list of number");
     }
    static int max(List<Integer> array){
         int size = array.size();
