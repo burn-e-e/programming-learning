@@ -3,7 +3,12 @@ import java.util.*;
 
 public class Lab2 {
     public static final String yellow = "\u001B[33m";
-    public static final String reset = "\u001B[0m";
+    public static final String reset;
+
+    static {
+        reset = "\u001B[0m";
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter size of List: ");
