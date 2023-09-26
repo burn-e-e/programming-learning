@@ -24,17 +24,30 @@ public class MyList extends Main{
                 }
 
             }else {
-                System.out.println("---Wrong input!---");
+                for (int num : array) {
+                    System.out.print(" ["+num+"]");
+                }
+                System.out.println("\n---Wrong input!---");
             }
         }while (option);
         if (counter==0){
             main(null); //Call back main class
         }else if (counter > 0){
-            for (int num : array) {
-                System.out.print(" ["+num+"]");
-            }
-
+            modifyMenu(array);
         }
+    }
+    public static void modifyMenu(List<Integer> arr){
+        Scanner sc  = new Scanner(System.in);
+        for (int num : arr) {
+            System.out.print(" ["+num+"]");
+        }
+        System.out.println("\n1 - Add");
+        System.out.println("2 - Remove");
+        System.out.println("3 - Switch");
+        System.out.println("4 - Min");
+        System.out.println("5 - Max");
+        System.out.println("e - Exit");
+        int choose = sc.nextInt();
     }
     public static String MenuList(){
         String choice;

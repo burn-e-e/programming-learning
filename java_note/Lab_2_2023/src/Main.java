@@ -1,5 +1,6 @@
 import java.lang.management.MemoryNotificationInfo;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 public class Main {
@@ -27,14 +28,18 @@ public class Main {
         while (selected > 4 || selected < 0);
     }
     public static int MenuData(){
-        int selection;
+        int selection = 0;
         Scanner sc = new Scanner(System.in);
         System.out.println("---Select your option:---");
         System.out.println("1 - List Array");
         System.out.println("2 - ");
         System.out.println("3 - ");
         System.out.println("4 - ");
-        selection=sc.nextInt();
+        try{
+            selection=sc.nextInt();
+        }catch (InputMismatchException ex){
+           main(null);
+        }
         return selection;
     }
 }
