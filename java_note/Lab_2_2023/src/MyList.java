@@ -5,8 +5,7 @@ import java.util.Scanner;
 
 public class MyList extends Main{
     Scanner sc = new Scanner(System.in);
-    int size = 10;
-    List<Integer> array = new ArrayList<>(size);
+    List<Integer> array = new ArrayList<>();
     MyList(){
         String selected;
         boolean option = true;
@@ -38,16 +37,52 @@ public class MyList extends Main{
     }
     public static void modifyMenu(List<Integer> arr){
         Scanner sc  = new Scanner(System.in);
-        for (int num : arr) {
-            System.out.print(" ["+num+"]");
-        }
-        System.out.println("\n1 - Add");
-        System.out.println("2 - Remove");
-        System.out.println("3 - Switch");
-        System.out.println("4 - Min");
-        System.out.println("5 - Max");
-        System.out.println("e - Exit");
-        int choose = sc.nextInt();
+        do{
+            for (int num : arr) {
+                System.out.print(" ["+num+"]");
+            }
+            System.out.println("\n1 - Add");
+            System.out.println("2 - Add at index");
+            System.out.println("3 - Remove");
+            System.out.println("4 - Switch");
+            System.out.println("5 - Min");
+            System.out.println("6 - Max");
+            System.out.println("7 - Exit");
+            int choose = sc.nextInt();
+            switch(choose){
+                case 1:
+                    System.out.println("Enter number that you want to add ");
+                    arr.add(sc.nextInt());
+                    break;
+                case 2:
+                    System.out.println("Enter your index and number ");
+                    arr.add(sc.nextInt(), sc.nextInt());
+                    break;
+                case 3:
+                    System.out.println("Enter number that you want to remove ");
+                    arr.remove(sc.nextInt());
+                    break;
+                case 4:
+                    System.out.println("Enter indexes to change their position");
+                    int findex = sc.nextInt();
+                    int sindex = sc.nextInt();
+                    int fnum = arr.get(findex);
+                    int snum = arr.get(sindex);
+                    arr.remove(findex);
+                    arr.add(findex,snum);
+                    arr.add(sindex,fnum);
+                    break;
+                case 5:
+                    System.out.println("Min number is "+min(arr));
+                    break;
+                case 6:
+                    System.out.println("Max number is "+max(arr));
+                    break;
+                case 7:
+                    main(null);
+                    break;
+            }
+        }while(true);
     }
     public static String MenuList(){
         String choice;
