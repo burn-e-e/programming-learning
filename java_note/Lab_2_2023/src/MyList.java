@@ -125,21 +125,24 @@ public class MyList extends Main{
                     }
                     break;
                 case 12:
-                    System.out.println("Enter element that you want to search");
+                    System.out.print("Enter the element that you want to search: ");
                     int sElement = sc.nextInt();
                     int count = 0;
+
                     Iterator<Integer> ite = arr.iterator();
+                    int currentIndex = 0; // Keep track of the current index
+
                     while (ite.hasNext()) {
-                        if (ite.next() == sElement) {
-                          count++;
+                        int currentElement = ite.next();
+                        if (currentElement == sElement) {
+                            System.out.println((currentIndex + 1) + ". Your entered number " + sElement + " is at index " + currentIndex);
+                            count++;
                         }
+                        currentIndex++;
                     }
-                    int[] index = new int[count];
-                    for (int i = 0 ; i < count ;i++){
-                        index[i] = arr.indexOf(sElement);
-                        if (index[i] != -1){
-                            System.out.println(i+1+". Your entered number "+sElement+" is at index "+index[i]);
-                        }
+
+                    if (count == 0) {
+                        System.out.println("Element " + sElement + " was not found in the ArrayList.");
                     }
                     break;
                 case 13:
