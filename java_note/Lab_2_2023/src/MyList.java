@@ -134,14 +134,13 @@ public class MyList extends Main{
                           count++;
                         }
                     }
-                    int index = arr.indexOf(sElement);
-                    for (int i = 0 ; i< count;i++){
-                        if (index != -1){
-                            System.out.println(count+". Your entered number "+sElement+" is at insex "+index);
+                    int[] index = new int[count];
+                    for (int i = 0 ; i < count ;i++){
+                        index[i] = arr.indexOf(sElement);
+                        if (index[i] != -1){
+                            System.out.println(i+1+". Your entered number "+sElement+" is at index "+index[i]);
                         }
                     }
-
-
                     break;
                 case 13:
                     main(null);
