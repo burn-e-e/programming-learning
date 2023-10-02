@@ -1,5 +1,5 @@
 import java.util.*;
-
+import java.util.Iterator;
 public class MyList extends Main{
     Scanner sc = new Scanner(System.in);
     List<Integer> array = new ArrayList<>();
@@ -40,15 +40,17 @@ public class MyList extends Main{
             }
             System.out.println("\n1 - Add");
             System.out.println("2 - Add at index");
-            System.out.println("3 - Remove");
-            System.out.println("4 - Switch");
-            System.out.println("5 - Min");
-            System.out.println("6 - Max");
-            System.out.println("7 - Sort");
-            System.out.println("8 - Average");
-            System.out.println("9 - Sum");
-            System.out.println("10 - Remove odd Numbers");
-            System.out.println("11 - Exit");
+            System.out.println("3 - Remove by index");
+            System.out.println("4 - Remove by element");
+            System.out.println("5 - Switch");
+            System.out.println("6 - Min");
+            System.out.println("7 - Max");
+            System.out.println("8 - Sort");
+            System.out.println("9 - Average");
+            System.out.println("10 - Sum");
+            System.out.println("11 - Remove odd Numbers");
+            System.out.println("12 - Search element");
+            System.out.println("13 - Exit");
             int choose = 0;
             try{
                 choose=sc.nextInt();
@@ -74,6 +76,16 @@ public class MyList extends Main{
                     }
                     break;
                 case 4:
+                    System.out.println("Enter element that you want to remove");
+                    int relement = sc.nextInt();
+                    Iterator<Integer> iterator = arr.iterator();
+                    while (iterator.hasNext()) {
+                        if (iterator.next() == relement) {
+                            iterator.remove();
+                        }
+                    }
+                    break;
+                case 5:
                     System.out.println("Enter indexes to change their position");
 
                     int findex = sc.nextInt();
@@ -90,29 +102,48 @@ public class MyList extends Main{
                     }
 
                     break;
-                case 5:
+                case 6:
                     System.out.println("Min number is "+min(arr));
                     break;
-                case 6:
+                case 7:
                     System.out.println("Max number is "+max(arr));
                     break;
-                case 7:
+                case 8:
                     System.out.println("Sort number is "+sort(arr));
                     break;
-                case 8:
+                case 9:
                     System.out.println("Average number is "+average(arr));
                     break;
-                case 9:
+                case 10:
                     System.out.println("Sum number is "+sum(arr));
                     break;
-                case 10:
+                case 11:
                     System.out.println("Removed odd numbers");
                     arr = removeOdd(arr);
                     if (arr.isEmpty()){
                         System.out.println("All odd numbers are removed");
                     }
                     break;
-                case 11:
+                case 12:
+                    System.out.println("Enter element that you want to search");
+                    int sElement = sc.nextInt();
+                    int count = 0;
+                    Iterator<Integer> ite = arr.iterator();
+                    while (ite.hasNext()) {
+                        if (ite.next() == sElement) {
+                          count++;
+                        }
+                    }
+                    int index = arr.indexOf(sElement);
+                    for (int i = 0 ; i< count;i++){
+                        if (index != -1){
+                            System.out.println(count+". Your entered number "+sElement+" is at insex "+index);
+                        }
+                    }
+
+
+                    break;
+                case 13:
                     main(null);
                     break;
                 default:
