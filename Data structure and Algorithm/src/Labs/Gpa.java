@@ -1,3 +1,5 @@
+package Labs;
+
 import java.util.Scanner;
 import java.lang.String;
 public class Gpa {
