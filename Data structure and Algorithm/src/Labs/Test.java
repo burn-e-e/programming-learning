@@ -1,13 +1,22 @@
 package Labs;
 
+import java.util.Scanner;
+
 public class Test {
     public static void main(String[] args) {
-        System.out.println(sum(4));
-    }
-    static public int sum(int a){
-        if (a <= 0){
-            return 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the size of the array:");
+        int size = scanner.nextInt();
+        Object[] massive = new Object[size];
+
+        for (int i = 0; i < size; i++) {
+            System.out.println("Enter value for index " + i + ":");
+            massive[i] = scanner.next();
         }
-        return a+sum(a-1);
+
+        // Print the array to verify input
+        for (int i = 0; i < size; i++) {
+            System.out.println("massive[" + i + "] = " + massive[i]);
+        }
     }
 }

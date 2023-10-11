@@ -2,6 +2,7 @@
 
 /** linked implementation of LinearList */
 
+import javax.swing.plaf.IconUIResource;
 import java.util.*;
 
 public class Chain implements LinearList
@@ -207,7 +208,29 @@ public class Chain implements LinearList
 
       return array;
    }
+   public void addRange(Object[] elements){
 
+      for (Object element:elements){
+         add(size,element);
+      }
+   }
+   public MyChain union(MyChain chain) {
+      MyChain result = new MyChain();
+      result.addRange(this.toArray());
+      result.addRange(chain.toArray());
+      return result;
+   }
+
+   public MyChain intersection(MyChain chain) {
+      MyChain result = new MyChain();
+      for (int i = 0; i < size; i++) {
+         Object element = get(i);
+         if (chain.indexOf(element) != -1) {
+            result.add(result.size(), element);
+         }
+      }
+      return result;
+   }
    /** test program */
    public static void main(String [] args)
    {
@@ -215,6 +238,8 @@ public class Chain implements LinearList
       Chain x = new Chain();
    
       // test size
+
+
       System.out.println("Initial size is " + x.size());
    
       // test isEmpty
@@ -270,9 +295,6 @@ public class Chain implements LinearList
          System.out.print(y.next() + " ");
       System.out.println();
 
-     Object[] array = x.toArray();
-     for (Object element:array){
-        System.out.println(element);
-     }
+
    }
 }
