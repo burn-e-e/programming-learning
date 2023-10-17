@@ -41,7 +41,15 @@ public class MyChain extends Chain {
                     System.out.println(chain1);
                     break;
                 case 4:
-
+                    System.out.println("Enter number of integers that you want to add");
+                    int size1 = sc.nextInt();
+                    Object[] obj2 = new Object[size1];
+                    for (int i = 0; i < size1; i++) {
+                        System.out.println("Enter value for index " + i + ":");
+                        obj2[i] = sc.next();
+                    }
+                    chain2.addRange(obj2);
+                    System.out.println(chain1);
                     break;
                 case 5:
                     MyChain unionResult = chain1.union(chain2);
