@@ -1,12 +1,14 @@
 package DS_A;
-
-import javax.rmi.ssl.SslRMIClientSocketFactory;
 import java.util.Stack;
 
 public class Stack_1 {
     public static void main(String[] args) {
         Stack<String> stack = new Stack<String>();
-        // Last-In First-Out --LIFO
+
+        //        add    = push()
+        //        remove = pop()
+        //        FIRST IN LAST OUT
+
         stack.push("Dota 2");
         stack.push("Doom");
         stack.push("CS2");
