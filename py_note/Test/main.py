@@ -1,12 +1,16 @@
 from inspect import stack
 import random
 stack = []
+
 def game():
     nOFb = random.randint(2, 6)
-    print("Таньд өгсөн сумын тоо: " + str(nOFb))
+    count = 0
     for i in range(nOFb):
         state = random.randint(0,1)
+        if(state == 1):
+            count+=1
         stack.append(state)
+    print("[",count, " сум, ", nOFb - count, " хонгио ]")
     print(stack)
     option()
 def gameHealth(x):
@@ -24,7 +28,7 @@ def gameHealth(x):
     print(myhp, "/", ophp)
 
 def option():
-    print("1. Өөрийгөө буудах\n2. Эсрэг талаа буудах")
+    print("1. Shoot yourself\n2. Shoot opponent")
     choose = input()
     gameHealth(int(choose))
 def menu():

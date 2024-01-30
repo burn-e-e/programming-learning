@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="FileIOS/|Lab_13/|DSA/src/|Lab_2/|Lecture9/|bd/|Lab_5/|Java_GUI/src/|Lab_2_2023/src/|Lecture_14/|Lab_15/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="bd"/>
+	<classpathentry kind="src" path="DSA/src"/>
+	<classpathentry kind="src" path="FileIOS"/>
+	<classpathentry kind="src" path="Java_GUI/src"/>
+	<classpathentry kind="src" path="Lab_13"/>
+	<classpathentry kind="src" path="Lab_15/src"/>
+	<classpathentry kind="src" path="Lab_2"/>
+	<classpathentry kind="src" path="Lab_2_2023/src"/>
+	<classpathentry kind="src" path="Lab_5"/>
+	<classpathentry kind="src" path="Lecture_14"/>
+	<classpathentry kind="src" path="Lecture9"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

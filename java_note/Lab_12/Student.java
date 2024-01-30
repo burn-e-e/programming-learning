@@ -12,5 +12,6 @@ public class Student {
      }
      void show(){
           System.out.println("Name: "+name+" Code: "+code+" Gpa: "+gpa);
+          System.out.println("Zail");
      }
 }

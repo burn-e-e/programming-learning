@@ -15,5 +15,7 @@ public class Main {
           q1.square();
           q1.show(" Talbai bol: ");
           q1.show();
+          q1.show();
+//          3:41
      }
 }
