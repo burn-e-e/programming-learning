@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "bd4.First.Main",
+      "projectName": "java_note"
+    },
+    {
+      "type": "java",
       "name": "GUI",
       "request": "launch",
       "mainClass": "GUI",
