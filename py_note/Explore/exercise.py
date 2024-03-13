@@ -1,0 +1,2 @@
+class Monster:
+    def i
